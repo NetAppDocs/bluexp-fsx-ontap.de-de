@@ -23,9 +23,6 @@
   <block id="d5b1044cbc510048a5dac270bde89ed5" category="inline-link">Unterstützte Amazon Regionen anzeigen.</block>
   <block id="ee9b3af8630059982f4d1dd2fd3834a3" category="paragraph"><block ref="ee9b3af8630059982f4d1dd2fd3834a3" category="inline-link-rx"></block></block>
   <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">Hilfe wird abgerufen</block>
-  <block id="adae5e92a515a3174e9058a6b8179a41" category="paragraph">Amazon FSX für ONTAP ist eine AWS Lösung eines Drittanbieters. Wenn Sie Fragen oder Probleme mit dem technischen Support im Zusammenhang mit Ihrem AWS FSX-Filesystem, der Infrastruktur oder jeder AWS-Lösung, die diesen Service verwendet, haben, öffnen Sie über das Support Center in Ihrer AWS-Konsole einen Support-Case für AWS. Wählen Sie den Service „FSX for ONTAP“ und die entsprechende Kategorie aus. Geben Sie die verbleibenden Informationen an, die zur Erstellung Ihres AWS-Supportfalls erforderlich sind.</block>
-  <block id="c38a4c52c19f29b55ed16af8a145fb57" category="paragraph">Bei allgemeinen Fragen zu BlueXP oder BlueXP Micro-Services können Sie mit dem Inline-Chat von BlueXP beginnen.</block>
-  <block id="8ae3d71a6e8ab23cdfe061900ab42a08" category="paragraph">Bei technischen Support-Problemen in Bezug auf BlueXP oder Micro-Services im können Sie über die Seriennummer des BlueXP Accounts ein NetApp Support Ticket erstellen. Sie müssen Ihre BlueXP-Seriennummer registrieren, um den Support zu aktivieren.</block>
   <block id="d2f0ad44b51fbd3850fad8307ea16aa3" category="inline-link-macro">Richten Sie eine IAM-Rolle ein, mit der BlueXP SaaS die Rolle übernehmen kann</block>
   <block id="fdf5c0db5e25841d90a9737c63c9172a" category="inline-link">Connector für AWS</block>
   <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">Weiterführende Links</block>
@@ -714,4 +711,15 @@
   <block id="d9299eb7664af835098dc63cf4cfa0a9" category="section-title">Verwalten Sie die automatische Kapazität mit einem aktiven Konnektor</block>
   <block id="24eab999bc6be3c2241c58c7aee7ae10" category="paragraph">Verwalten Sie die automatische Kapazität mit einem aktiven Connector in AWS.</block>
   <block id="938b92d62e3cd9d5d18b4db5abd32cfa" category="list-text">Wählen Sie das Bleistiftsymbol (<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>) Um die Seite *Automatische Kapazitätsverwaltung* zu öffnen.</block>
+  <block id="c6a640d3ad983820aec62cd7b77b9b54" category="paragraph">Amazon FSX für ONTAP ist eine AWS Lösung eines Drittanbieters. Wenn Sie Fragen oder technische Support-Probleme im Zusammenhang mit dem ONTAP Filesystem, der Infrastruktur oder jeder Lösung, die diesen Service verwendet, haben, öffnen Sie über das Support Center in Ihrer AWS Konsole einen Support-Fall bei AWS. Wählen Sie den Service „FSX for ONTAP“ und die entsprechende Kategorie aus. Geben Sie die verbleibenden Informationen an, die zur Erstellung Ihres AWS-Supportfalls erforderlich sind.</block>
+  <block id="f1018077b1703f5d0801e8cd07c23fb9" category="paragraph">Bei allgemeinen Fragen zu BlueXP oder BlueXP Micro-Services können Sie mit dem Inline-Chat von BlueXP beginnen.</block>
+  <block id="41fa05171eb08b9478abe51f41110a5f" category="inline-link-macro">registrieren Sie Ihr BlueXP-Konto</block>
+  <block id="97bc2947e30223870f8c99f41ffe970b" category="paragraph">Bei technischen Support-Problemen in Bezug auf BlueXP oder Micro-Services im können Sie über die Seriennummer des BlueXP Accounts ein NetApp Support Ticket erstellen. Das müssen Sie <block ref="1da17bacda87cc6ccc7a9f1f44b5e325" category="inline-link-macro-rx"></block> Um den Support zu aktivieren.</block>
+  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">Unterstützung für Cloud-Provider-Lösungen</block>
+  <block id="58cbf70b5dfbc206d1d9c6559ae58d1b" category="paragraph">Technische Unterstützung für Cloud-Provider-Lösungen finden Sie in der BlueXP-Dokumentation für Ihr Produkt unter „Hilfe erhalten“.</block>
+  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Dateien</block>
+  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
+  <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Cloud Volumes Service für Google Cloud</block>
+  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
 </blocks>
