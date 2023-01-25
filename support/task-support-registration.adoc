@@ -16,7 +16,7 @@ Bevor Sie einen Support-Fall beim technischen Support von NetApp eröffnen könn
 
 == Unterstützung für Cloud-Provider-Lösungen
 
-Technische Unterstützung für Cloud-Provider-Lösungen finden Sie in der BlueXP-Dokumentation für Ihr Produkt unter „Hilfe erhalten“.
+Technische Unterstützung für die folgenden Lösungen von Cloud-Providern, die Sie in BlueXP integriert haben, finden Sie in der BlueXP-Dokumentation zu diesem Produkt unter „Hilfe“.
 
 * link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html#getting-help["Amazon FSX für ONTAP"^]
 * link:https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/concept-azure-netapp-files.html#getting-help["Azure NetApp Dateien"^]
