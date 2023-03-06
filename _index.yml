@@ -23,7 +23,7 @@ indexpage:
     links:
     - title: Erstellen oder ermitteln Sie eine Arbeitsumgebung
       url: "/use/task-creating-fsx-working-environment.html"
-    - title: Verwalten Sie die Arbeitsverwaltung
+    - title: Verwalten Sie die Arbeitsumgebung
       url: "/use/task-manage-working-environment.html"
     - title: Erstellung und Mounten von Volumes
       url: "/use/task-add-fsx-volumes.html"

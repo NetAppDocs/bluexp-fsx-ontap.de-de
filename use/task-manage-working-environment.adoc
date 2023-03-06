@@ -34,8 +34,8 @@ Das automatische Kapazitätsmanagement ist standardmäßig deaktiviert. Sie kön
 Sie können automatische Kapazität ohne einen aktiven Connector in AWS verwalten.
 
 .Schritte
-. Öffnen Sie die FSX für die ONTAP-Arbeitsumgebung.
-. Wählen Sie das Menüsymbol (image:icon-three-dots.png["Bild des Menüsymbols für drei Punkte."]) Und wählen Sie *Automatische Kapazität verwalten*.
+. Wählen Sie die Arbeitsumgebung FSX for ONTAP auf dem Bildschirm aus.
+. Verwenden Sie im Fenster *Details* das Symbol mit den drei Punkten (image:icon-three-dots.png["Symbol mit drei Punkten"]), um das Optionsmenü zu öffnen. Klicken Sie Auf *Automatische Kapazität Verwalten*.
 +
 image:screenshot-auto-capacity-no-connector.png["Screenshot des Menüs Automatische Kapazität verwalten."]
 
@@ -139,18 +139,19 @@ image:screenshot_fsx_working_environment_remove.png["Ein Screenshot der Option E
 
 Sie können das FSX für ONTAP von BlueXP löschen.
 
-.Bevor Sie beginnen
-* Unbedingt link:task-manage-fsx-volumes.html#delete-volumes["Löschen Sie alle Volumes"] Dem Dateisystem zugeordnet.
-
-
-
-NOTE: Zum Entfernen oder Löschen von Volumes ist ein aktiver Connector in AWS erforderlich.
-
-* Sie können keine Arbeitsumgebung löschen, die fehlerhafte Volumes enthält. Ausgefallene Volumes müssen mit der AWS Management Console oder CLI gelöscht werden, bevor sie FSX für ONTAP File System löschen.
-
-
 
 WARNING: Durch diese Aktion werden alle Ressourcen gelöscht, die der Arbeitsumgebung zugeordnet sind. Diese Aktion kann nicht rückgängig gemacht werden.
+
+.Bevor Sie beginnen
+Vor dem Löschen der Arbeitsumgebung müssen Sie:
+
+* Brechen Sie alle Replikationsbeziehungen mit dieser Arbeitsumgebung auf.
+* link:task-manage-fsx-volumes.html#delete-volumes["Alle Volumes löschen"] Dem Dateisystem zugeordnet. Zum Entfernen oder Löschen von Volumes ist ein aktiver Connector in AWS erforderlich.
++
+
+NOTE: Ausgefallene Volumes müssen über die AWS Management Console oder CLI gelöscht werden.
+
+
 
 .Schritte
 . Öffnen Sie die Arbeitsumgebung. Wenn Sie keinen Connector in AWS haben, wird der Bildschirm zur Eingabeaufforderung angezeigt. Sie können dies ignorieren und mit dem Löschen der Arbeitsumgebung fortfahren.
