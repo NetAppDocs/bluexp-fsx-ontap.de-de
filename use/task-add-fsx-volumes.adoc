@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: use/task-add-fsx-volumes.html 
 keywords: fsx for ontap, fsx, aws, create volumes, create nfs volumes, delete nfs volumes, cifs volumes, iscsi, mount volume, delete working environment 
-summary: Nach der Einrichtung der Arbeitsumgebung haben Sie die Möglichkeit, Amazon FSX für ONTAP Volumes, Klone und Snapshots zu erstellen und zu managen, Tiering-Richtlinien zu ändern und FSX für ONTAP zu entfernen oder zu löschen. 
+summary: Nachdem Sie Ihre Arbeitsumgebung eingerichtet haben, können Sie Amazon FSX für NetApp ONTAP Volumes, Klone und Snapshots erstellen und verwalten, Tiering-Richtlinien ändern und FSX für ONTAP entfernen oder löschen. 
 ---
-= Erstellung von Volumes für Amazon FSX für ONTAP
+= Erstellen von Volumes für Amazon FSX für NetApp ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

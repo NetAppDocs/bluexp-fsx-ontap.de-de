@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, cloud manager' 
-summary: Erfahren Sie alles zu den Neuerungen bei Amazon FSX für ONTAP. 
+summary: Erfahren Sie mehr über die Neuerungen in Amazon FSX for NetApp ONTAP. 
 ---
-= Was ist neu mit Amazon FSX für ONTAP
+= Neuerungen bei Amazon FSX for NetApp ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Erfahren Sie alles zu den Neuerungen bei Amazon FSX für ONTAP.
 
 
 [role="lead"]
-Erfahren Sie alles zu den Neuerungen bei Amazon FSX für ONTAP.
+Erfahren Sie mehr über die Neuerungen in Amazon FSX for NetApp ONTAP.
 
 
 
@@ -111,18 +111,18 @@ Das ist jetzt möglich link:https://docs.netapp.com/us-en/cloud-manager-fsx-onta
 
 
 
-=== Unterstützung von Amazon FSX für ONTAP
+=== Unterstützung von Amazon FSX für NetApp ONTAP
 
-* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon FSX für ONTAP"^] Ist ein vollständig gemanagter Service, mit dem Kunden Filesysteme auf Basis des NetApp ONTAP Storage-Betriebssystems starten und ausführen können. FSX für ONTAP bietet dieselben Funktionen, Performance und Managementfunktionen, die NetApp Kunden vor Ort nutzen. Außerdem bietet sie die Einfachheit, Agilität, Sicherheit und Skalierbarkeit eines nativen AWS Service.
+* link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon FSX für NetApp ONTAP"^] Ist ein vollständig gemanagter Service, mit dem Kunden Filesysteme auf Basis des NetApp ONTAP Storage-Betriebssystems starten und ausführen können. FSX für ONTAP bietet dieselben Funktionen, Performance und Managementfunktionen, die NetApp Kunden vor Ort nutzen. Außerdem bietet sie die Einfachheit, Agilität, Sicherheit und Skalierbarkeit eines nativen AWS Service.
 +
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["Weitere Informationen zu Amazon FSX für ONTAP"^].
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["Weitere Informationen zu Amazon FSX für NetApp ONTAP"^].
 
 * Sie können eine FSX für ONTAP Arbeitsumgebung in Cloud Manager konfigurieren.
 +
-link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["Amazon FSX für ONTAP-Arbeitsumgebungen erstellen"^].
+link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["Erstellen einer Arbeitsumgebung von Amazon FSX für NetApp ONTAP"^].
 
 * Mit einem Connector in AWS und Cloud Manager lassen sich Volumes erstellen und managen, Daten replizieren und FSX für ONTAP in NetApp Cloud-Services wie Data Sense und Cloud Sync integrieren.
 +
-link:https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-fsx.html["Erste Schritte mit Cloud Data Sense für Amazon FSX für ONTAP"^].
+link:https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-fsx.html["Erste Schritte mit Cloud Data Sense für Amazon FSX for NetApp ONTAP"^].
 
 

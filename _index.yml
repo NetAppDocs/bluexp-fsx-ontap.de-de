@@ -9,7 +9,7 @@ indexpage:
     links:
     - title: Versionshinweise
       url: "/whats-new.html"
-    - title: Weitere Informationen zu Amazon FSX für ONTAP
+    - title: Weitere Informationen zu Amazon FSX für NetApp ONTAP
       url: "/start/concept-fsx-aws.html"
     - title: Schnellstart
       url: "/start/task-getting-started-fsx.html"
@@ -19,7 +19,7 @@ indexpage:
       url: "/requirements/task-setting-up-permissions-fsx.html"
     - title: Regeln für Sicherheitsgruppen
       url: "/requirements/reference-security-groups-fsx.html"
-  - title: Verwenden Sie Amazon FSX für ONTAP
+  - title: Verwenden Sie Amazon FSX für NetApp ONTAP
     links:
     - title: Erstellen oder ermitteln Sie eine Arbeitsumgebung
       url: "/use/task-creating-fsx-working-environment.html"

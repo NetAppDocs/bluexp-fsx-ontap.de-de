@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: start/concept-fsx-aws.html 
-keywords: amazon fsx for ontap, volumes, aws, access key, secret key, cloud manager 
-summary: Amazon FSX für ONTAP ist ein vollständig gemanagter Service, mit dem Kunden Filesysteme, die auf NetApp ONTAP Storage-Betriebssystem basiert, starten und ausführen können. FSX für ONTAP bietet dieselben Funktionen, Performance und Managementfunktionen, die NetApp Kunden heute vor Ort nutzen. Außerdem bietet sie die Einfachheit, Agilität, Sicherheit und Skalierbarkeit eines nativen AWS Service. 
+keywords: Amazon FSx for NetApp ONTAP, volumes, aws, access key, secret key, cloud manager 
+summary: Amazon FSX for NetApp ONTAP ist ein vollständig gemanagter Service, mit dem Kunden Dateisysteme mit dem NetApp ONTAP Storage-Betriebssystem starten und ausführen können. FSX für ONTAP bietet dieselben Funktionen, Performance und Managementfunktionen, die NetApp Kunden heute vor Ort nutzen. Außerdem bietet sie die Einfachheit, Agilität, Sicherheit und Skalierbarkeit eines nativen AWS Service. 
 ---
-= Weitere Informationen zu Amazon FSX für ONTAP
+= Weitere Informationen zu Amazon FSX für NetApp ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Amazon FSX für ONTAP ist ein vollständig gemanagter Service, mit dem 
 
 
 [role="lead"]
-link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon FSX für ONTAP"^] Ist ein vollständig gemanagter Service, mit dem Kunden Filesysteme auf Basis des NetApp ONTAP Storage-Betriebssystems starten und ausführen können. FSX für ONTAP bietet dieselben Funktionen, Performance und Managementfunktionen, die NetApp Kunden vor Ort nutzen. Außerdem bietet sie die Einfachheit, Agilität, Sicherheit und Skalierbarkeit eines nativen AWS Service.
+link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon FSX für NetApp ONTAP"^] Ist ein vollständig gemanagter Service, mit dem Kunden Filesysteme auf Basis des NetApp ONTAP Storage-Betriebssystems starten und ausführen können. FSX für ONTAP bietet dieselben Funktionen, Performance und Managementfunktionen, die NetApp Kunden vor Ort nutzen. Außerdem bietet sie die Einfachheit, Agilität, Sicherheit und Skalierbarkeit eines nativen AWS Service.
 
 
 
@@ -40,7 +40,7 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["A
 
 == Kosten
 
-Ihr FSX für ONTAP Konto wird von AWS verwaltet und nicht von BlueXP. Siehe https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon FSX für ONTAP – erste Schritte"^].
+Ihr FSX für ONTAP Konto wird von AWS verwaltet und nicht von BlueXP. Siehe https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon FSX for NetApp ONTAP: Erste Schritte"^].
 
 Bei der Nutzung des Connectors in AWS und der optionalen Datenservices wie Cloud Sync und Data Sense entstehen zusätzliche Kosten.
 
@@ -54,7 +54,7 @@ https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services
 
 == Hilfe wird abgerufen
 
-Amazon FSX für ONTAP ist eine AWS Lösung eines Drittanbieters. Wenn Sie Fragen oder technische Support-Probleme im Zusammenhang mit dem ONTAP Filesystem, der Infrastruktur oder jeder Lösung, die diesen Service verwendet, haben, öffnen Sie über das Support Center in Ihrer AWS Konsole einen Support-Fall bei AWS. Wählen Sie den Service „FSX for ONTAP“ und die entsprechende Kategorie aus. Geben Sie die verbleibenden Informationen an, die zur Erstellung Ihres AWS-Supportfalls erforderlich sind.
+Amazon FSX für NetApp ONTAP ist eine AWS-First-Party-Lösung. Wenn Sie Fragen oder technische Support-Probleme im Zusammenhang mit Ihrem ONTAP Filesystem, Ihrer Infrastruktur oder jeder Lösung, die diesen Service verwendet, haben Sie über das Support-Center in Ihrer AWS-Konsole einen Support-Fall für AWS zu eröffnen. Wählen Sie den Service „FSX for ONTAP“ und die entsprechende Kategorie aus. Geben Sie die verbleibenden Informationen an, die zur Erstellung Ihres AWS-Supportfalls erforderlich sind.
 
 Bei allgemeinen Fragen zu BlueXP oder BlueXP Storage-Lösungen und -Services können Sie mit dem Inline-Chat von BlueXP beginnen.
 
