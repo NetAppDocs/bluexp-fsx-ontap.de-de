@@ -110,7 +110,7 @@ image:screenshot-configure-iops.png["Ein Screenshot der Seite, um die Storage-Ka
 [NOTE]
 ====
 ** Die empfohlene maximale Storage-Kapazitätsauslastung liegt bei 80 % für die Aufrechterhaltung der Data Tiering Performance und die Gewährleistung von Kapazität für zusätzliche Daten.
-** Bei Auswahl von *Automatic* IOPS wird ein Verhältnis von drei bereitgestellten SSD-IOPS pro gib des Primärspeichers bis zu 80,000 erhalten. Sie können einen IOPS-Wert von mindestens 80,000 nicht manuell bereitstellen.
+** Bei Auswahl von *Automatic* IOPS wird ein Verhältnis von drei bereitgestellten SSD-IOPS pro gib primären Speicher auf bis zu 160,000 beibehalten. Sie können keinen IOPS-Wert größer als 160,000 manuell bereitstellen.
 
 
 ====
