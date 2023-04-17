@@ -265,7 +265,6 @@
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp bietet Unterstützung für BlueXP und seine Cloud-Services auf unterschiedliche Weise. Umfassende kostenlose Self-Support-Optionen stehen rund um die Uhr zur Verfügung, wie etwa Knowledge Base-Artikel (KB) und ein Community-Forum. Ihre Support-Registrierung umfasst technischen Remote-Support über Web-Ticketing.</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">Diese Optionen sind kostenlos verfügbar, 24 Stunden am Tag, 7 Tage die Woche:</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">Wissensdatenbank</block>
-  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">Suchen Sie in der BlueXP Knowledge Base nach hilfreichen Artikeln zur Fehlerbehebung.</block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">Communitys</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
@@ -363,14 +362,10 @@
   <block id="f5d07457c4656e60fff8f3663f422965" category="list-text">Wählen Sie auf der Registerkarte *Übersicht* die Option *Funktionen*.</block>
   <block id="7ccd7b62d91207f4ba83029de9cebfce" category="inline-image-macro">Bild des Bleistiftbearbeitungssymbols.</block>
   <block id="2498d03a4261c0c377ff9aa14f08a01b" category="list-text">Wählen Sie das Bleistiftsymbol (<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>) Um die Seite *Durchsatz Kapazität* bearbeiten zu öffnen.</block>
-  <block id="87b240f45f566a73d19136ab81e90ad1" category="inline-image-macro">Ein Screenshot der Position des Menüs „Durchsatzkapazität ändern“.</block>
-  <block id="e09dc417c2d896d165ca331477153842" category="paragraph"><block ref="e09dc417c2d896d165ca331477153842" category="inline-image-macro-rx" type="image"></block></block>
   <block id="230f70d1e5d26fbe6e5ad10f5308cabe" category="list-text">Wählen Sie eine neue Durchsatzkapazität aus der Dropdown-Liste aus und wählen Sie *Update*. Diese Änderung kann bis zu 25 Minuten dauern, bis sie wirksam wird, und der Datenzugriff wird nicht unterbrochen.</block>
   <block id="a0ebe9e341b2c5054b22afc7d98d1401" category="section-title">Ändern Sie Storage-Kapazität und IOPS</block>
   <block id="f3c93b45ca50102a9f0b7eae1e06d071" category="paragraph">Sie können die Storage-Kapazität und IOPS jederzeit ändern, nachdem Sie die FSX für ONTAP Arbeitsumgebung erstellt haben.</block>
   <block id="048b8d92cffbe45e8afec553ae5bdab0" category="list-text">Wählen Sie das Bleistiftsymbol (<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>) Um die Seite *Storage Capacity &amp; IOPS* zu öffnen.</block>
-  <block id="d6684930c2875391fe70b5eb14401bbb" category="inline-image-macro">Ein Screenshot des Speicherorts des Menüs „Speicherkapazität ändern“ und „IOPS“.</block>
-  <block id="687579d242782f9a851dc5bb5ba9abc9" category="paragraph"><block ref="687579d242782f9a851dc5bb5ba9abc9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dfb628b495d5e0828edcde206a117a0d" category="list-text">Sie können die Storage-Kapazität und IOPS einmal alle sechs Stunden ändern. Wenn Sie versuchen, Änderungen häufiger vorzunehmen, erhalten Sie einen Fehler.</block>
   <block id="e67f7cfa37e5dcd4f3836e76f5301a68" category="inline-image-macro">Ein Screenshot der Seite, um die Storage-Kapazität und IOPS-Werte zu ändern</block>
   <block id="f5aa006a4894acbba121bdb32f513ead" category="paragraph"><block ref="f5aa006a4894acbba121bdb32f513ead" category="inline-image-macro-rx" type="image"></block></block>
@@ -586,8 +581,6 @@
   <block id="baf936091e5717d22f9c2b2ccee10188" category="paragraph">Das automatische Kapazitätsmanagement ist standardmäßig deaktiviert. Sie können automatische Kapazitäten mit oder ohne einen aktiven Connector in AWS verwalten.</block>
   <block id="2ccb2d581067f0eac436a078317d136d" category="section-title">Verwalten der automatischen Kapazität ohne aktiven Anschluss</block>
   <block id="13c4ac4dcec1decf7e36eed04316808f" category="paragraph">Sie können automatische Kapazität ohne einen aktiven Connector in AWS verwalten.</block>
-  <block id="eae78abc1ac9b9443e78946ea0ac6f62" category="inline-image-macro">Screenshot des Menüs Automatische Kapazität verwalten.</block>
-  <block id="8568f4aa8725b5fac6d8be22b191626f" category="paragraph"><block ref="8568f4aa8725b5fac6d8be22b191626f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7c48e42b8eb4f773ff1ba4e512f8d941" category="list-text">Auf der Seite *Automatic Capacity Management*:</block>
   <block id="fc3a15f119ad5decc28ff415b2538e29" category="list-text">Wählen Sie das Feld aus, um die automatische Kapazitätsverwaltung zu aktivieren.</block>
   <block id="b7e02100f637951d6f90e4991487480c" category="list-text">Deaktivieren Sie das Kontrollkästchen, um das automatische Kapazitätsmanagement zu deaktivieren, wenn es zuvor aktiviert wurde.</block>
@@ -630,7 +623,6 @@
   <block id="190d60175b0eacbdfa304b7842dfdbeb" category="paragraph">BlueXP zeigt Ihr erdecktes FSX für ONTAP Filesystem auf dem Bildschirm an. Sie können jetzt mit BlueXP Volumes zu Ihrer FSX für ONTAP Arbeitsumgebung hinzufügen.</block>
   <block id="7ed3f8d43ed4db5c9e5058ffd0629f8e" category="list-text">Wählen Sie die Arbeitsumgebung FSX for ONTAP auf dem Bildschirm aus.</block>
   <block id="ecfec57afc8858c85d63541a36a09dab" category="inline-image-macro">Symbol mit drei Punkten</block>
-  <block id="c0f7f08571189db02e2d550c230d6abf" category="list-text">Verwenden Sie im Fenster *Details* das Symbol mit den drei Punkten (<block ref="4d658ec40ed039406a8a891871de0f3d" category="inline-image-macro-rx" type="image"></block>), um das Optionsmenü zu öffnen. Klicken Sie Auf *Automatische Kapazität Verwalten*.</block>
   <block id="0cf6b9b81deec54f9429260623e85e8b" category="paragraph">Vor dem Löschen der Arbeitsumgebung müssen Sie:</block>
   <block id="23419c7b0a3275446ffc7e82955443ad" category="list-text">Brechen Sie alle Replikationsbeziehungen mit dieser Arbeitsumgebung auf.</block>
   <block id="1cf37f8bb2a45b0eb43d008c81e06383" category="inline-link-macro">Alle Volumes löschen</block>
@@ -748,4 +740,7 @@
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Anhang (optional)*: Laden Sie bis zu fünf Anhänge nacheinander hoch.</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Anhänge sind auf 25 MB pro Datei begrenzt. Folgende Dateierweiterungen werden unterstützt: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx und csv.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Aktennotizen aktualisieren*: Geben Sie zusätzliche Details zu Ihrem Problem an oder wählen Sie *Dateien hochladen*, um maximal fünf Dateien anzuhängen.</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="857256e1923ea05bf18e14bc2411a2f6" category="list-text">Wählen Sie die Arbeitsumgebung auf dem Bildschirm aus und wählen Sie *Arbeitsumgebung eingeben*.</block>
+  <block id="015abe149b937f218b783e72c81c3e66" category="admonition">Alle anderen Optionen erfordern einen Konnektor und sind deaktiviert.</block>
 </blocks>

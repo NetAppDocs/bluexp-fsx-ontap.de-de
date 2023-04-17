@@ -34,12 +34,12 @@ Das automatische Kapazitätsmanagement ist standardmäßig deaktiviert. Sie kön
 Sie können automatische Kapazität ohne einen aktiven Connector in AWS verwalten.
 
 .Schritte
-. Wählen Sie die Arbeitsumgebung FSX for ONTAP auf dem Bildschirm aus.
-. Verwenden Sie im Fenster *Details* das Symbol mit den drei Punkten (image:icon-three-dots.png["Symbol mit drei Punkten"]), um das Optionsmenü zu öffnen. Klicken Sie Auf *Automatische Kapazität Verwalten*.
+. Wählen Sie die Arbeitsumgebung auf dem Bildschirm aus und wählen Sie *Arbeitsumgebung eingeben*.
+. Wählen Sie das Bleistiftsymbol (image:icon-pencil.png["Bild des Bleistiftbearbeitungssymbols."]) Um die Seite *Automatische Kapazitätsverwaltung* zu öffnen.
 +
-image:screenshot-auto-capacity-no-connector.png["Screenshot des Menüs Automatische Kapazität verwalten."]
 
-. Auf der Seite *Automatic Capacity Management*:
+NOTE: Alle anderen Optionen erfordern einen Konnektor und sind deaktiviert.
+
 +
 ** Wählen Sie das Feld aus, um die automatische Kapazitätsverwaltung zu aktivieren.
 ** Deaktivieren Sie das Kontrollkästchen, um das automatische Kapazitätsmanagement zu deaktivieren, wenn es zuvor aktiviert wurde.
@@ -80,9 +80,6 @@ Sie benötigen eine aktive https://docs.netapp.com/us-en/cloud-manager-setup-adm
 . Öffnen Sie die FSX für die ONTAP-Arbeitsumgebung.
 . Wählen Sie auf der Registerkarte *Übersicht* die Option *Funktionen*.
 . Wählen Sie das Bleistiftsymbol (image:icon-pencil.png["Bild des Bleistiftbearbeitungssymbols."]) Um die Seite *Durchsatz Kapazität* bearbeiten zu öffnen.
-+
-image:screenshot-change-thruput.png["Ein Screenshot der Position des Menüs „Durchsatzkapazität ändern“."]
-
 . Wählen Sie eine neue Durchsatzkapazität aus der Dropdown-Liste aus und wählen Sie *Update*. Diese Änderung kann bis zu 25 Minuten dauern, bis sie wirksam wird, und der Datenzugriff wird nicht unterbrochen.
 
 
@@ -99,9 +96,6 @@ Sie benötigen eine aktive https://docs.netapp.com/us-en/cloud-manager-setup-adm
 . Öffnen Sie die FSX für die ONTAP-Arbeitsumgebung.
 . Wählen Sie auf der Registerkarte *Übersicht* die Option *Funktionen*.
 . Wählen Sie das Bleistiftsymbol (image:icon-pencil.png["Bild des Bleistiftbearbeitungssymbols."]) Um die Seite *Storage Capacity & IOPS* zu öffnen.
-+
-image:screenshot-change-iops.png["Ein Screenshot des Speicherorts des Menüs „Speicherkapazität ändern“ und „IOPS“."]
-
 . Sie können die Storage-Kapazität und IOPS einmal alle sechs Stunden ändern. Wenn Sie versuchen, Änderungen häufiger vorzunehmen, erhalten Sie einen Fehler.
 +
 image:screenshot-configure-iops.png["Ein Screenshot der Seite, um die Storage-Kapazität und IOPS-Werte zu ändern"]
