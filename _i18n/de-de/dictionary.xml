@@ -609,7 +609,6 @@
   <block id="b04e1903e3de2fffa52c1c517b8fed45" category="list-text">*Routingtabellen* (nur mehrere Verfügbarkeitszonen)</block>
   <block id="f884e9a3951c5c6df696ce1faeecf517" category="paragraph">Wählen Sie Routingtabellen aus, die Routen zu den unverankerten IP-Adressen enthalten. Wenn Sie nur eine Routingtabelle für die Subnetze in Ihrem VPC (der Hauptroutingtabelle) haben, fügt BlueXP automatisch die fließenden IP-Adressen zu dieser Routingtabelle hinzu.</block>
   <block id="a150e060bd138eb9dd07f260966de37f" category="list-text">*Datenverschlüsselung*</block>
-  <block id="9ecf502b4c55c670661584e0a2866004" category="paragraph">Akzeptieren Sie den Standard-AWS-Master-Schlüssel oder klicken Sie auf *Change Key*, um einen anderen AWS Customer Master Key (CMK) auszuwählen. Weitere Informationen zu CMK finden Sie unter<block ref="e519e39311516455306db28fa7daaed2" category="inline-link-rx"></block>.</block>
   <block id="a1ab9258bbeb31ecc1e35b1adc9465dc" category="list-text">*Speicherkonfiguration*</block>
   <block id="e38fe475552b433630789034542b28de" category="list-text">Wählen Sie Durchsatz, Kapazität und Einheit aus. Sie können den Durchsatz, die Storage-Kapazität und die IOPS jederzeit ändern.</block>
   <block id="704b454e0a67ad9d30229aad055c4456" category="paragraph"><block ref="704b454e0a67ad9d30229aad055c4456" category="inline-image-macro-rx" type="image"></block></block>
@@ -618,8 +617,6 @@
   <block id="a434ec7166240525e1136a9caf043a5e" category="list-text">Klicken Sie auf *Zurück*, um Änderungen an den Einstellungen vorzunehmen, oder auf *Hinzufügen*, um die Einstellungen zu akzeptieren und Ihre Arbeitsumgebung zu erstellen.</block>
   <block id="1f56efe328efe9c20f590e659125509a" category="paragraph">BlueXP zeigt Ihre FSX for ONTAP Konfiguration auf dem Bildschirm an. Sie können jetzt mit BlueXP Volumes zu Ihrer FSX für ONTAP Arbeitsumgebung hinzufügen.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">Über diese Aufgabe</block>
-  <block id="3c98e2bfe156ca99fa37e38b1eb68d0d" category="inline-link-macro">Schaffung einer neuen Arbeitsumgebung</block>
-  <block id="e3ed7d241946f79ddb205b1bcc1095b7" category="paragraph">Sie können FSX für ONTAP-Dateisysteme durch entdecken <block ref="7605911292967addd7ea4683855fa385" category="inline-link-macro-rx"></block> Oder über die Seite *Meine Möglichkeiten*. Diese Aufgabe beschreibt die Ermittlung unter Verwendung von *Meine Möglichkeiten*</block>
   <block id="190d60175b0eacbdfa304b7842dfdbeb" category="paragraph">BlueXP zeigt Ihr erdecktes FSX für ONTAP Filesystem auf dem Bildschirm an. Sie können jetzt mit BlueXP Volumes zu Ihrer FSX für ONTAP Arbeitsumgebung hinzufügen.</block>
   <block id="7ed3f8d43ed4db5c9e5058ffd0629f8e" category="list-text">Wählen Sie die Arbeitsumgebung FSX for ONTAP auf dem Bildschirm aus.</block>
   <block id="ecfec57afc8858c85d63541a36a09dab" category="inline-image-macro">Symbol mit drei Punkten</block>
@@ -743,4 +740,6 @@
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="857256e1923ea05bf18e14bc2411a2f6" category="list-text">Wählen Sie die Arbeitsumgebung auf dem Bildschirm aus und wählen Sie *Arbeitsumgebung eingeben*.</block>
   <block id="015abe149b937f218b783e72c81c3e66" category="admonition">Alle anderen Optionen erfordern einen Konnektor und sind deaktiviert.</block>
+  <block id="5f7a63a809602fb324d9cb35527588c3" category="paragraph">Akzeptieren Sie den Standard-AWS-Master-Schlüssel oder klicken Sie auf *Change Key*, um einen anderen AWS Customer Master Key (CMK) auszuwählen. Weitere Informationen zu CMK finden Sie unter <block ref="1dc4ebcb4490720ee959d2e943d1421f" category="inline-link-macro-rx"></block>.</block>
+  <block id="a5444638448a3ec03827da5d57eb445b" category="paragraph">Sie können FSX für ONTAP-Dateisysteme erkennen, wenn Sie <block ref="7d3d3d003158d818e356e6a619082003" category="inline-xref-macro-rx"></block> Oder über die Seite *Meine Möglichkeiten*. Diese Aufgabe beschreibt die Ermittlung unter Verwendung von *Meine Möglichkeiten*</block>
 </blocks>

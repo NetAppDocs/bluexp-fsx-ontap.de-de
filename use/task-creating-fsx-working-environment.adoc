@@ -67,7 +67,7 @@ Wählen Sie Routingtabellen aus, die Routen zu den unverankerten IP-Adressen ent
 
 . *Datenverschlüsselung*
 +
-Akzeptieren Sie den Standard-AWS-Master-Schlüssel oder klicken Sie auf *Change Key*, um einen anderen AWS Customer Master Key (CMK) auszuwählen. Weitere Informationen zu CMK finden Sie unter https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/https://docs.netapp.com/us-en/occm/task-setting-up-kms.html["Einrichten des AWS KMS"^].
+Akzeptieren Sie den Standard-AWS-Master-Schlüssel oder klicken Sie auf *Change Key*, um einen anderen AWS Customer Master Key (CMK) auszuwählen. Weitere Informationen zu CMK finden Sie unter link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-kms.html["Einrichten des AWS KMS"^].
 
 . *Speicherkonfiguration*
 +
@@ -102,7 +102,7 @@ image:screenshot_add_fsx_cloud.png["Ein Screenshot von Amazon FSX for NetApp ONT
 Wenn Sie zuvor Ihre AWS Zugangsdaten für BlueXP zur Verfügung gestellt haben, kann *My Opportunities* FSX für ONTAP Dateisysteme automatisch erkennen und vorschlagen, mit BlueXP hinzuzufügen und zu verwalten. Sie können auch verfügbare Datenservices prüfen.
 
 .Über diese Aufgabe
-Sie können FSX für ONTAP-Dateisysteme durch entdecken link:/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-ontap-working-environment["Schaffung einer neuen Arbeitsumgebung"] Oder über die Seite *Meine Möglichkeiten*. Diese Aufgabe beschreibt die Ermittlung unter Verwendung von *Meine Möglichkeiten*
+Sie können FSX für ONTAP-Dateisysteme erkennen, wenn Sie <<Erstellen einer Arbeitsumgebung von Amazon FSX für NetApp ONTAP>> Oder über die Seite *Meine Möglichkeiten*. Diese Aufgabe beschreibt die Ermittlung unter Verwendung von *Meine Möglichkeiten*
 
 .Schritte
 . Klicken Sie in BlueXP auf die Registerkarte *Meine Chancen*.
