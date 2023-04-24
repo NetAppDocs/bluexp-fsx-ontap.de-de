@@ -268,13 +268,13 @@ Die Sicherheitsgruppe für den Konnektor erfordert sowohl ein- als auch ausgehen
 | SSH | 22 | Bietet SSH-Zugriff auf den Connector-Host 
 
 
-| HTTP | 80 | Bietet HTTP-Zugriff von Client-Webbrowsern auf die lokale Benutzeroberfläche und Verbindungen von Cloud Data Sense 
+| HTTP | 80 | Bietet HTTP-Zugriff von Client-Webbrowsern auf die lokale Benutzeroberfläche und Verbindungen von der BlueXP Klassifizierungsinstanz 
 
 
 | HTTPS | 443 | Bietet HTTPS-Zugriff von Client-Webbrowsern auf die lokale Benutzeroberfläche 
 
 
-| TCP | 3128 | Bietet die Cloud Data Sense-Instanz einen Internetzugriff, wenn Ihr AWS-Netzwerk keine NAT oder Proxy verwendet 
+| TCP | 3128 | Stellt die BlueXP Klassifizierungsinstanz mit Internetzugang bereit, wenn Ihr AWS Netzwerk kein NAT oder Proxy verwendet 
 |===
 
 
@@ -348,5 +348,5 @@ NOTE: Die Quell-IP-Adresse ist der Connector-Host.
 | DNS | UDP | 53 | DNS | Wird für DNS Resolve von BlueXP verwendet 
 
 
-| Cloud-Daten Sinnvoll | HTTP | 80 | Cloud Data Sense Instanz | Cloud-Daten sinnvoll für Cloud Volumes ONTAP 
+| BlueXP Klassifizierung | HTTP | 80 | BlueXP Klassifizierung | BlueXP Klassifizierung für Cloud Volumes ONTAP 
 |===
