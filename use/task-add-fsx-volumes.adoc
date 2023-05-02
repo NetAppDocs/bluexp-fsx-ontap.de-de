@@ -42,11 +42,6 @@ image:screenshot-add-volume.png["Ein Screenshot der Option „Volume hinzufügen
 .. Die Felder Storage VM (SVM) füllt die SVM automatisch auf der Grundlage des Namens Ihrer Arbeitsumgebung.
 .. Geben Sie die Volume-Größe ein, und wählen Sie eine Einheit (gib oder tib) aus. Die Volume-Größe wächst mit der Nutzung.
 .. Wählen Sie eine Snapshot-Richtlinie aus. Standardmäßig wird stündlich ein Snapshot erstellt (wobei die letzten sechs Kopien behalten), täglich (wobei die letzten beiden Kopien aufbewahrt werden) und jede Woche (wobei die letzten beiden Kopien aufbewahrt werden).
-.. Optional können Sie die Optimierungsoption auswählen, um eine FlexGroup zu erstellen und Volume-Daten über das Cluster zu verteilen.
-+
-
-NOTE: Die FlexGroup Distribution ist nur für NFS- und CIFS-Volume-Protokolle verfügbar.
-
 
 
 . *Volumenprotokoll*:
@@ -134,10 +129,6 @@ image:screenshot-volume-protocol-iscsi.png["Screenshot der iSCSI-Konfiguration F
 .. Standardmäßig ist *Tiering Policy* auf *nur Snapshot* eingestellt. Sie können je nach Ihren Anforderungen eine andere Tiering-Richtlinie auswählen.
 +
 image:screenshot_fsx_volume_usage_tiering.png["Screenshot aus dem Nutzungsprofil und der Tiering-Konfiguration für FSX für die Erstellung von ONTAP Volumes"]
-
-.. Wenn Sie Optimierung (FlexGroup) ausgewählt haben, müssen Sie die Anzahl der Komponenten angeben, über die Volume-Daten verteilt werden sollen. Wir empfehlen dringend, eine gerade Anzahl von Komponenten zu verwenden, um eine gleichmäßige Datenverteilung zu gewährleisten. Best Practice besteht aus 8 Bestandteilen.
-+
-image:screenshot-constituents.png["Ein Screenshot des Felds zur Angabe der Anzahl der Komponenten, über die Volume-Daten verteilt werden sollen."]
 
 
 
