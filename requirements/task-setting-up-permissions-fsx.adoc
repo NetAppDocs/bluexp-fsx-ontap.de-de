@@ -33,8 +33,14 @@ Richten Sie eine IAM-Rolle ein, mit der BlueXP die Rolle übernehmen kann.
 *** Für AWS GovCloud (USA): 033442085313
 
 
-** Erstellen Sie eine Richtlinie, die die folgenden Berechtigungen enthält:
+** Erstellen Sie eine Richtlinie, die die folgenden erforderlichen Mindestberechtigungen und optionalen Berechtigungen enthält, falls erforderlich.
 +
+[role="tabbed-block"]
+====
+.Erforderliche Berechtigungen
+--
+Die folgenden Mindestberechtigungen sind erforderlich, um BlueXP die Erstellung Ihres FSX für NetApp ONTAP Filesystems zu ermöglichen.
+
 [source, json]
 ----
 {
@@ -50,19 +56,43 @@ Richten Sie eine IAM-Rolle ein, mit der BlueXP die Rolle übernehmen kann.
                 "iam:CreateServiceLinkedRole",
                 "kms:Describe*",
                 "kms:List*",
-                "kms:CreateGrant",
-                "cloudwatch:GetMetricData",
-                "cloudwatch:GetMetricStatistics"
+                "kms:CreateGrant"
             ],
             "Resource": "*"
         }
     ]
 }
 ----
-+
+--
+.Automatische Kapazität
+--
+Für die Aktivierung sind die folgenden zusätzlichen Berechtigungen erforderlich link:../use/task-manage-fsx-working-environment.html["Automatisches Kapazitätsmanagement"].
 
-NOTE: `"cloudwatch:GetMetricData"` Und `"cloudwatch:GetMetricStatistics"` Zur Aktivierung erforderlich sind link:../use/task-manage-working-environment.html["Automatisches Kapazitätsmanagement"].
+[source, json]
+----
+"cloudwatch:GetMetricData",
+"cloudwatch:GetMetricStatistics"
+----
+--
+.Sicherheitsgruppen
+--
+Die folgenden zusätzlichen Berechtigungen sind erforderlich, um BlueXP zu ermöglichen link:../use/task-creating-fsx-working-environment.html["Sicherheitsgruppen generieren"].
 
+[source, json]
+----
+"ec2:AuthorizeSecurityGroupEgress",
+"ec2:AuthorizeSecurityGroupIngress",
+"ec2:RevokeSecurityGroupEgress",
+"ec2:RevokeSecurityGroupIngress",
+"ec2:CreateSecurityGroup",
+"ec2:DeleteSecurityGroup"
+"cloudformation:CreateStack",
+"cloudformation:ValidateTemplate",
+"cloudformation:DescribeStacks",
+"cloudformation:DescribeStackEvents"
+----
+--
+====
 
 
 . Kopieren Sie die Rolle ARN der IAM-Rolle, sodass Sie sie im nächsten Schritt in BlueXP einfügen können.

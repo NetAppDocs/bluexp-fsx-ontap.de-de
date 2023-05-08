@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: use/task-creating-fsx-working-environment.html 
-keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput 
+keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput, security group, security 
 summary: Mit BlueXP können Sie eine FSX für ONTAP-Arbeitsumgebungen erstellen oder erkennen, um Volumes und zusätzliche Datenservices hinzuzufügen und zu managen. 
 ---
 = Erstellen oder ermitteln Sie eine Arbeitsumgebung von Amazon FSX for NetApp ONTAP
@@ -22,7 +22,7 @@ Mithilfe von BlueXP können Sie eine FSX für ONTAP-Arbeitsumgebung erstellen un
 
 Im ersten Schritt wird ein FSX für die ONTAP-Arbeitsumgebung erstellt. Wenn Sie bereits ein FSX für ONTAP-Dateisystem in der AWS-Verwaltungskonsole erstellt haben, können Sie dies tun link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["Entdecken Sie es mit BlueXP"].
 
-.Was Sie benötigen
+.Bevor Sie beginnen
 Bevor Sie Ihre FSX für ONTAP-Arbeitsumgebung in BlueXP erstellen, benötigen Sie Folgendes:
 
 * Das ARN einer IAM-Rolle, die BlueXP die erforderlichen Berechtigungen für die Erstellung eines FSX für die ONTAP-Arbeitsumgebung bietet. Siehe link:../requirements/task-setting-up-permissions-fsx.html["Hinzufügen von AWS Zugangsdaten zu BlueXP"] Entsprechende Details.
@@ -43,18 +43,20 @@ image:screenshot_add_fsx_working_env.png["Ein Screenshot des Hinzufügens einer 
 . *Details und Anmeldeinformationen*
 +
 .. Geben Sie den Namen der Arbeitsumgebung ein, die Sie verwenden möchten.
-.. Optional können Sie Tags erstellen, indem Sie auf das Pluszeichen klicken und einen Tag-Namen und -Wert eingeben.
+.. Optional können Sie Tags erstellen, um Ihre Arbeitsumgebung zu kategorisieren, indem Sie auf das Pluszeichen klicken und einen Tag-Namen und -Wert eingeben.
 .. Geben Sie das ONTAP-Cluster-Passwort ein, das Sie verwenden möchten, und bestätigen Sie es.
 .. Deaktivieren Sie optional die Option, dasselbe Passwort für Ihren SVM-Benutzer zu verwenden, und legen Sie ein anderes Passwort fest.
 
 
-. *Region und VPC*
+. *HA-Bereitstellungsmodell*
 +
 .. Wählen Sie ein HA-Implementierungsmodell mit *Single Availability Zone* oder *Multiple Availability Zones* aus. Wählen Sie bei mehreren Verfügbarkeitszonen Subnetze in mindestens zwei Verfügbarkeitszonen aus, damit sich jeder Knoten in einer dedizierten Verfügbarkeitszone befindet.
+.. Wählen Sie die Virtual Private Cloud (VPC) aus, die Sie mit Ihrem Dateisystem verknüpfen möchten.
+.. Verwenden Sie eine vorhandene Sicherheitsgruppe oder wählen Sie *generated Security Group* aus, um BlueXP zu ermöglichen, eine Sicherheitsgruppe zu generieren, die nur Datenverkehr innerhalb der ausgewählten VPC zulässt.
 +
-image:screenshot_add_fsx_region.png["Screenshot mit dem Hinzufügen einer Region und einem VPC für FSX für ONTAP"]
 
-.. Akzeptieren Sie die Standardsicherheitsgruppe, oder wählen Sie eine andere aus. link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["AWS Sicherheitsgruppen"^] Steuern des ein- und ausgehenden Datenverkehrs. Diese werden von Ihrem AWS Administrator konfiguriert und Ihrem zugeordnet link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["Elastische AWS Netzwerkschnittstelle (ENI)"^].
+NOTE: link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["AWS Sicherheitsgruppen"^] Steuern des ein- und ausgehenden Datenverkehrs. Diese werden von Ihrem AWS Administrator konfiguriert und Ihrem zugeordnet link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["Elastische AWS Netzwerkschnittstelle (ENI)"^].
+
 
 
 . *Floating IP* (nur mehrere Verfügbarkeitszonen)
@@ -73,9 +75,6 @@ Akzeptieren Sie den Standard-AWS-Master-Schlüssel oder klicken Sie auf *Change 
 +
 .. Wählen Sie Durchsatz, Kapazität und Einheit aus. Sie können den Durchsatz, die Storage-Kapazität und die IOPS jederzeit ändern.
 .. Optional können Sie einen IOPS-Wert angeben. Wenn Sie keinen IOPS-Wert angeben, wird bei BlueXP der Standardwert auf 3 IOPS pro gib der eingegebenen Gesamtkapazität festgelegt. Wenn Sie beispielsweise 2000 gib für die Gesamtkapazität und keinen Wert für die IOPS eingeben, wird der effektive IOPS-Wert auf 6000 festgelegt. Sie können den IOPS-Wert jederzeit ändern.
-+
-image:screenshot-storage-config.png["Screenshot mit dem Einstellen der Speicherkonfiguration für FSX für ONTAP"]
-
 +
 
 NOTE: Wenn Sie einen IOPS-Wert angeben, der die Mindestanforderungen nicht erfüllt, wird beim Hinzufügen der Arbeitsumgebung ein Fehler angezeigt.

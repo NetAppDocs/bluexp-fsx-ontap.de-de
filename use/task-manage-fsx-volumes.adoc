@@ -65,6 +65,19 @@ Nachdem Sie ein Volume erstellt haben, können Sie aus einem neuen Snapshot ein 
 
 
 
+== Verwalten von Volume-Tags
+
+Sie können Volume-Tags hinzufügen, ändern oder löschen. In BlueXP hinzugefügte Tags werden auch in der AWS Konsole angezeigt. Es kann bis zu einer Stunde dauern, bis Tags mit der AWS-Konsole synchronisiert sind.
+
+.Schritte
+. Öffnen Sie die Arbeitsumgebung.
+. Öffnen Sie die Registerkarte Volume und wählen Sie *Lautstärke verwalten*, um das Menü *Volume Actions* zu öffnen.
+. Wählen Sie * Volume-Tags verwalten*.
+. Wählen Sie *Speichern*, um Ihre Änderungen anzuwenden.
+
+
+
+
 == Verwalten von Snapshot Kopien
 
 Snapshot Kopien erstellen eine zeitpunktgenaue Kopie des Volume. Erstellung von Snapshot Kopien und Wiederherstellung der Daten auf einem neuen Volume
