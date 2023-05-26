@@ -347,7 +347,6 @@
   <block id="35f5a704747f7e6644a0bbedc33a0c2e" category="paragraph">Das Volume ist jetzt auf den Host eingebunden.</block>
   <block id="8539ab4c6f55c58d2fab4f2b3261bde9" category="section-title">Durchsatzkapazität ändern</block>
   <block id="4b1f2fea7e8048c8ccd3036ead1c2a76" category="paragraph">Sie können die Durchsatzkapazität jederzeit ändern, nachdem Sie die FSX für ONTAP Arbeitsumgebung erstellt haben.</block>
-  <block id="e85b82fa898245e765ecb2eab8ee886e" category="paragraph">Sie benötigen eine aktive<block ref="f8ec938ce1f3506a828c9f7802c63902" category="inline-link-rx"></block>.</block>
   <block id="f5d07457c4656e60fff8f3663f422965" category="list-text">Wählen Sie auf der Registerkarte *Übersicht* die Option *Funktionen*.</block>
   <block id="7ccd7b62d91207f4ba83029de9cebfce" category="inline-image-macro">Bild des Bleistiftbearbeitungssymbols.</block>
   <block id="2498d03a4261c0c377ff9aa14f08a01b" category="list-text">Wählen Sie das Bleistiftsymbol (<block ref="a3ce23dbf8ced4424507771e4b6881ae" category="inline-image-macro-rx" type="image"></block>) Um die Seite *Durchsatz Kapazität* bearbeiten zu öffnen.</block>
@@ -749,4 +748,10 @@
   <block id="9175bb34d0aede26315b313b9432bcbb" category="open-title">Sicherheitsgruppen</block>
   <block id="42c16fd45375c160089e29d754f16e36" category="inline-link-macro">Sicherheitsgruppen generieren</block>
   <block id="78004ed8e8658d85d8a3d99a1a533922" category="paragraph">Die folgenden zusätzlichen Berechtigungen sind erforderlich, um BlueXP zu ermöglichen <block ref="37425afe2ceb1de25205a180b5a14074" category="inline-link-macro-rx"></block>.</block>
+  <block id="25ee158968a50cfd221a03cd5c35714d" category="list-text">Amazon FSX for NetApp ONTAP wird unterstützt, wenn BlueXP im _Standard_- oder _Restricted_-Modus verwendet wird.</block>
+  <block id="3cb5845101cca1d3632756ad505df41c" category="list-text">Der Standardmodus nutzt die BlueXP SaaS-Ebene für volle Funktionalität.</block>
+  <block id="8515864aee35dd4c309a887dc85ffb7f" category="list-text">Der eingeschränkte Modus ist für Unternehmen mit Konnektivitätsbeschränkungen verfügbar.</block>
+  <block id="2579d10862aa7770a64b058fb84ce858" category="inline-link-macro">BlueXP Implementierungsmodi</block>
+  <block id="4fc602d8b048690865d920b6e5c24b3c" category="paragraph">Siehe <block ref="4bc49635495ab7c2db508b6d63907d47" category="inline-link-macro-rx"></block> Finden Sie weitere Informationen.</block>
+  <block id="b6b3f8e91334c4e2b9135fdcdc27fdb6" category="paragraph">Sie benötigen eine aktive<block ref="3cb2ea74cf184f32793e529e96915ba2" category="inline-link-rx"></block>.</block>
 </blocks>
