@@ -111,9 +111,9 @@ Snapshot Kopien erstellen eine zeitpunktgenaue Kopie des Volume. Erstellung von 
 
 == Datenreplizierung und -Synchronisierung
 
-Mithilfe von BlueXP können Sie Daten zwischen Speicherumgebungen replizieren. Informationen zur Konfiguration von FSX für ONTAP-Replikation finden Sie unter https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Replizierung von Daten zwischen Systemen"^].
+Mithilfe von BlueXP können Sie Daten zwischen Speicherumgebungen replizieren. Informationen zur Konfiguration von FSX für ONTAP-Replikation finden Sie unter https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Replizierung von Daten zwischen Systemen"^].
 
-Sie können Synchronisierungsbeziehungen mit der BlueXP Kopier- und Synchronisierungsfunktion erstellen. Informationen zum Konfigurieren von Synchronisierungsbeziehungen finden Sie unter https://docs.netapp.com/us-en/cloud-manager-sync/task-creating-relationships.html["Erstellung von Synchronisierungsbeziehungen"^].
+Sie können Synchronisierungsbeziehungen mit der BlueXP Kopier- und Synchronisierungsfunktion erstellen. Informationen zum Konfigurieren von Synchronisierungsbeziehungen finden Sie unter https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["Erstellung von Synchronisierungsbeziehungen"^].
 
 
 

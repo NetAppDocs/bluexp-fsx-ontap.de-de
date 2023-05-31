@@ -61,7 +61,7 @@ NOTE: link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-ru
 
 . *Floating IP* (nur mehrere Verfügbarkeitszonen)
 +
-Lassen Sie _CIDR-Bereich_ leer, um automatisch einen verfügbaren Bereich einzustellen. Optional können Sie verwenden https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-transit-gateway.html["AWS Transit Gateway"^] Um einen Bereich manuell zu konfigurieren.
+Lassen Sie _CIDR-Bereich_ leer, um automatisch einen verfügbaren Bereich einzustellen. Optional können Sie verwenden https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-transit-gateway.html["AWS Transit Gateway"^] Um einen Bereich manuell zu konfigurieren.
 
 . *Routingtabellen* (nur mehrere Verfügbarkeitszonen)
 +
@@ -69,7 +69,7 @@ Wählen Sie Routingtabellen aus, die Routen zu den unverankerten IP-Adressen ent
 
 . *Datenverschlüsselung*
 +
-Akzeptieren Sie den Standard-AWS-Master-Schlüssel oder klicken Sie auf *Change Key*, um einen anderen AWS Customer Master Key (CMK) auszuwählen. Weitere Informationen zu CMK finden Sie unter link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-kms.html["Einrichten des AWS KMS"^].
+Akzeptieren Sie den Standard-AWS-Master-Schlüssel oder klicken Sie auf *Change Key*, um einen anderen AWS Customer Master Key (CMK) auszuwählen. Weitere Informationen zu CMK finden Sie unter link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.html["Einrichten des AWS KMS"^].
 
 . *Speicherkonfiguration*
 +

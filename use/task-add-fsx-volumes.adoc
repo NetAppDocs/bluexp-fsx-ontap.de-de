@@ -23,7 +23,7 @@ Nach der Einrichtung der Arbeitsumgebung können Sie FSX für ONTAP Volumes erst
 Sie können NFS-, CIFS- und iSCSI-Volumes über Ihre FSX für ONTAP Arbeitsumgebung in BlueXP erstellen und managen. Volumes, die mit der ONTAP CLI erstellt wurden, werden auch in Ihrer FSX für ONTAP Arbeitsumgebung sichtbar sein.
 
 .Bevor Sie beginnen
-Bevor Sie ein neues Volume erstellen, benötigen Sie einen aktiven https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Anschluss in AWS"^].
+Bevor Sie ein neues Volume erstellen, benötigen Sie einen aktiven https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html["Anschluss in AWS"^].
 
 Wenn Sie SMB verwenden möchten, müssen Sie DNS und Active Directory eingerichtet haben. Weitere Informationen zur DNS- und Active Directory-Netzwerkkonfiguration finden Sie unter link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-manage-prereqs.html["AWS: Voraussetzungen für die Nutzung eines selbst gemanagten Microsoft AD"^].
 
@@ -98,7 +98,7 @@ image:screenshot_fsx_volume_protocol_cifs.png["Screenshot der NFS-Konfiguration 
 | DNS-Domäne | Die DNS-Domäne für die Storage Virtual Machine (SVM). In den meisten Fällen entspricht die Domäne der AD-Domäne. 
 
 
-| NTP-Server | Wählen Sie *NTP Server Configuration* aktivieren, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Siehe https://docs.netapp.com/us-en/cloud-manager-automation/index.html["BlueXP Automation Dokumentation"^] Entsprechende Details. 
+| NTP-Server | Wählen Sie *NTP Server Configuration* aktivieren, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Siehe https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP Automation Dokumentation"^] Entsprechende Details. 
 |===
 
 
@@ -113,7 +113,7 @@ So erstellen Sie eine neue Initiatorgruppe:
 
 ... Wählen Sie **Neu erstellen**.
 ... Wählen Sie Ihr Betriebssystem aus.
-... Klicken Sie hier, um einen oder mehrere qualifizierte iSCSI-Namen (IQN) des Hosts hinzuzufügen. Sie können vorhandene IQNs auswählen oder neue IQNs hinzufügen. Weitere Informationen zum Auffinden des IQN für ein Volume finden Sie unter link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connect-lun.html["Verbinden Sie einen Host mit einer LUN"^].
+... Klicken Sie hier, um einen oder mehrere qualifizierte iSCSI-Namen (IQN) des Hosts hinzuzufügen. Sie können vorhandene IQNs auswählen oder neue IQNs hinzufügen. Weitere Informationen zum Auffinden des IQN für ein Volume finden Sie unter link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connect-lun.html["Verbinden Sie einen Host mit einer LUN"^].
 ... Geben Sie einen **Namen der Initiatorgruppe** ein.
 +
 image:screenshot-volume-protocol-iscsi.png["Screenshot der iSCSI-Konfiguration FSX für die Erstellung von ONTAP Volumes"]

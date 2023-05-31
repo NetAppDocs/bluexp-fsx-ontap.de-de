@@ -142,6 +142,6 @@ Sie können die Anmeldeinformationen jetzt verwenden, wenn Sie eine FSX für ONT
 
 == Weiterführende Links
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-accounts-aws.html["AWS Zugangsdaten und Berechtigungen"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["Management der AWS Credentials für BlueXP"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-accounts-aws.html["AWS Zugangsdaten und Berechtigungen"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Management der AWS Credentials für BlueXP"^]
 
