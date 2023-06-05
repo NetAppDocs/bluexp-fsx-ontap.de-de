@@ -43,7 +43,8 @@ image:screenshot_add_fsx_working_env.png["Ein Screenshot des Hinzufügens einer 
 . *Details und Anmeldeinformationen*
 +
 .. Geben Sie den Namen der Arbeitsumgebung ein, die Sie verwenden möchten.
-.. Optional können Sie Tags erstellen, um Ihre Arbeitsumgebung zu kategorisieren, indem Sie auf das Pluszeichen klicken und einen Tag-Namen und -Wert eingeben.
+.. Optional können Sie Tags erstellen, indem Sie auf das Pluszeichen klicken und einen Tag-Namen und -Wert eingeben.
+.. Optional können Sie die Startzeit für Amazon FSX für NetApp ONTAP angeben, um eine wöchentliche Wartung mit einer Dauer von 30 Minuten durchzuführen. Dies kann verwendet werden, um sicherzustellen, dass die Wartung nicht mit wichtigen Geschäftsaktivitäten übereinstimmt. Wenn Sie *Keine Präferenz* auswählen, wird eine zufällige Startzeit zugewiesen. Sie können dies jederzeit ändern.
 .. Geben Sie das ONTAP-Cluster-Passwort ein, das Sie verwenden möchten, und bestätigen Sie es.
 .. Deaktivieren Sie optional die Option, dasselbe Passwort für Ihren SVM-Benutzer zu verwenden, und legen Sie ein anderes Passwort fest.
 
@@ -61,8 +62,21 @@ NOTE: link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-ru
 
 . *Floating IP* (nur mehrere Verfügbarkeitszonen)
 +
-Lassen Sie _CIDR-Bereich_ leer, um automatisch einen verfügbaren Bereich einzustellen. Optional können Sie verwenden https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-transit-gateway.html["AWS Transit Gateway"^] Um einen Bereich manuell zu konfigurieren.
+Lassen Sie _CIDR-Bereich_ leer, um automatisch einen verfügbaren Bereich einzustellen. Optional können Sie verwenden https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-transit-gateway.html["AWS Transit Gateway"^] Um einen Bereich manuell zu konfigurieren.
 
++
+[WARNING]
+====
+.IPS in den folgenden Bereichen werden nicht unterstützt:
+** 0.0.0.0/8
+** 127.0.0.0/8
+** 198.19.0.0/20
+** 224.0.0.0/4
+** 240.0.0.0/4
+** 255.255.255.255/32
+
+
+====
 . *Routingtabellen* (nur mehrere Verfügbarkeitszonen)
 +
 Wählen Sie Routingtabellen aus, die Routen zu den unverankerten IP-Adressen enthalten. Wenn Sie nur eine Routingtabelle für die Subnetze in Ihrem VPC (der Hauptroutingtabelle) haben, fügt BlueXP automatisch die fließenden IP-Adressen zu dieser Routingtabelle hinzu.
