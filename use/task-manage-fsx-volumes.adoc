@@ -41,11 +41,6 @@ Nachdem Sie ein Volume erstellt haben, können Sie es jederzeit ändern.
 . Öffnen Sie die Arbeitsumgebung.
 . Öffnen Sie die Registerkarte Volume und wählen Sie *Lautstärke verwalten*, um das Menü *Volume Actions* zu öffnen.
 . Wählen Sie *Lautstärkeeinstellungen bearbeiten* aus.
-+
-.. Für NFS können Sie die Größe und die Tags ändern.
-.. Für CIFS können Sie den Freigabennamen, die Benutzer, die Berechtigungen und die Snapshot-Richtlinie nach Bedarf ändern.
-
-
 . Wählen Sie *Anwenden*.
 
 
@@ -68,6 +63,9 @@ Nachdem Sie ein Volume erstellt haben, können Sie aus einem neuen Snapshot ein 
 == Verwalten von Volume-Tags
 
 Sie können Volume-Tags hinzufügen, ändern oder löschen. In BlueXP hinzugefügte Tags werden auch in der AWS Konsole angezeigt. Es kann bis zu einer Stunde dauern, bis Tags mit der AWS-Konsole synchronisiert sind.
+
+
+NOTE: Sie können die in BlueXP erstellten Volume-Tags erst bearbeiten, wenn sie mit AWS synchronisiert wurden. Dies kann bis zu einer Stunde dauern. Wenn die Option *Volume-Tags verwalten* ausgegraut ist, hat AWS die Volume-Tags noch nicht synchronisiert.
 
 .Schritte
 . Öffnen Sie die Arbeitsumgebung.

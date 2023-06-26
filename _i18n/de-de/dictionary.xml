@@ -382,8 +382,6 @@
   <block id="b29f6e00261f220f9ca9601a3dbc09df" category="section-title">Volumes bearbeiten</block>
   <block id="b609b522164fd601ccb14538b7074e4e" category="paragraph">Nachdem Sie ein Volume erstellt haben, können Sie es jederzeit ändern.</block>
   <block id="a324b09bde8b0186d3f43692b7556fd9" category="list-text">Wählen Sie *Lautstärkeeinstellungen bearbeiten* aus.</block>
-  <block id="4ba141f8bd3c71509d32aaf3d8ae34d6" category="list-text">Für NFS können Sie die Größe und die Tags ändern.</block>
-  <block id="ad348a3307068da0d1c8c03655a0d11e" category="list-text">Für CIFS können Sie den Freigabennamen, die Benutzer, die Berechtigungen und die Snapshot-Richtlinie nach Bedarf ändern.</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">Wählen Sie *Anwenden*.</block>
   <block id="fee2a02b904d6d1f207e959dbd807a75" category="section-title">Volumes klonen</block>
   <block id="6b94d8d9a10c7d18376b9f389dba9855" category="paragraph">Nachdem Sie ein Volume erstellt haben, können Sie aus einem neuen Snapshot ein neues Lese- und Schreib-Volume erstellen.</block>
@@ -763,4 +761,5 @@
   <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">Das Zuordnen der NSS-Anmeldedaten zu Ihrem BlueXP Konto unterscheidet sich von dem NSS-Konto, das mit einer BlueXP Benutzeranmeldung verknüpft ist.</block>
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">Diese NSS-Zugangsdaten sind mit Ihrer spezifischen BlueXP Konto-ID verknüpft. Benutzer, die zum BlueXP Konto gehören, können über *Support &gt; NSS Management* auf diese Anmeldedaten zugreifen.</block>
   <block id="69ca45f3f7552de8b10ae32cba3897d2" category="paragraph">Für die Aktivierung sind die folgenden zusätzlichen Berechtigungen erforderlich <block ref="1cea652ab03a953c6704c3bb96fcb9b7" category="inline-link-macro-rx"></block>.</block>
+  <block id="1a152437275e48cffd13b98c296a5e3f" category="admonition">Sie können die in BlueXP erstellten Volume-Tags erst bearbeiten, wenn sie mit AWS synchronisiert wurden. Dies kann bis zu einer Stunde dauern. Wenn die Option *Volume-Tags verwalten* ausgegraut ist, hat AWS die Volume-Tags noch nicht synchronisiert.</block>
 </blocks>
