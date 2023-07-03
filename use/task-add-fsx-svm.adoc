@@ -1,0 +1,116 @@
+---
+sidebar: sidebar 
+permalink: use/task-add-fsx-svm.html 
+keywords: fsx for ontap, fsx, aws, storage vm, storage virtual machine, svm, add svm, virtual machine, delete svm, tags, smb, cifs, delete 
+summary: 'Nachdem Sie Ihre Arbeitsumgebung erstellt haben, können Sie Storage Virtual Machines (VMs) in einem verwalteten Amazon FSX for NetApp ONTAP-Cluster hinzufügen, anzeigen und managen.' 
+---
+= Hinzufügen und Managen von Storage-VMs für Amazon FSX for NetApp ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Nachdem Sie Ihre Arbeitsumgebung erstellt haben, können Sie eine Storage Virtual Machine (VM) hinzufügen, anzeigen und managen - auch als _SVM_- auf einem verwalteten Amazon FSX for NetApp ONTAP-Cluster bezeichnet.
+
+
+
+== Fügen Sie eine Storage-VM hinzu
+
+Mit BlueXP können Sie bis zu der maximal zulässigen Anzahl Storage-VMs zum Filesystem Amazon FSX für ONTAP hinzufügen. Siehe link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html["AWS – Management von FSX für ONTAP Storage Virtual Machines"^] Entsprechende Details.
+
+.Über diese Aufgabe
+Sie können eine Speicher-VM hinzufügen, indem Sie die Arbeitsumgebung öffnen und die Registerkarte *Speicher-VMs* oder aus dem Bedienfeld der Arbeitsumgebung *Übersicht* auswählen. Diese Aufgabe beschreibt das Hinzufügen einer Speicher-VM über das Feld *Speicher-VMs*.
+
+.Bevor Sie beginnen
+* Sie benötigen eine aktive https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html["Anschluss in AWS"^].
+* Eine oder mehrere Storage-VMs erstellen. Siehe link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms.html["Managen Sie Storage-VMs in BlueXP"^] Entsprechende Details.
+
+
+.Schritte
+. Wählen Sie die Arbeitsumgebung FSX for ONTAP auf dem Bildschirm aus. Wenn Sie keinen Konnektor aktiviert haben, werden Sie aufgefordert, einen hinzuzufügen.
+. Wählen Sie das Feld *Storage VMs* aus. Vorhandene SVMs werden angezeigt. Wählen Sie **SVM hinzufügen**, um eine neue SVM hinzuzufügen.
++
+image:svm-add.png["Ein Screenshot aus dem Bereich Storage VMs."]
+
+. *Virtuelle Speichermaschine hinzufügen*
++
+.. Geben Sie den Namen Ihrer Storage-VM ein.
+.. Wählen Sie den Sicherheitstil des konfigurierten Storage-VM-Root-Volumes aus. Gültige Werte sind ** UNIX**, **NTFS** oder **Mixed**.
+.. Optional können Sie ein Storage-VM-Administratorpasswort angeben.
+.. Optional können Sie bis zu fünfzig Tags erstellen, um Ihre SVM zu kategorisieren, indem Sie auf das Pluszeichen klicken und einen Tag-Namen und -Wert eingeben.
+.. Wählen Sie **Hinzufügen**, um die Speicher-VM hinzuzufügen.
+
+
+
+
+.Ergebnis
+Die neue Storage-VM wird der Arbeitsumgebung und dem Filesystem Amazon FSX for NetApp ONTAP hinzugefügt.
+
+
+
+== Management einer Storage-VM
+
+Sie können Details zu Storage-VMs anzeigen, Tags managen, eine SMB/CIFS-Verbindung einrichten oder eine Storage SVM löschen.
+
+.Bevor Sie beginnen
+Sie benötigen eine aktive https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html["Anschluss in AWS"^].
+
+.Schritte
+. Wählen Sie die Arbeitsumgebung FSX for ONTAP auf dem Bildschirm aus. Wenn Sie keinen Konnektor aktiviert haben, werden Sie aufgefordert, einen hinzuzufügen.
+. Wählen Sie das Feld *Storage VMs* aus.
+. Verwenden Sie die drei Punkte (image:icon-three-dots.png["Symbol mit drei Punkten"]), um das Optionsmenü für die Speicher-VM zu öffnen.
++
+image:svm-manage.png["Ein Screenshot aus dem Menü der Option „Storage VM managen“ im Bereich „Storage VMs“"]
+
+. Wählen Sie eine Menüoption aus, um die Einstellungen für die Storage VM anzuzeigen oder zu verwalten.
++
+** **SVM-Details anzeigen**: Sie können Details wie Root-Volume, Sicherheitsstil, zulässige Protokolle, Active Directory-Domäne und Tags überprüfen.
+** **SVM-Tags verwalten**: Sie können Storage-VM-Tags hinzufügen, bearbeiten oder entfernen. Die vorgenommenen Änderungen werden mit der AWS-Konsole synchronisiert.
+** **SMB/CIFS einrichten**: Wenn dies die erste CIFS-Verbindung für diese Arbeitsumgebung ist, werden Sie aufgefordert, die CIFS-Konnektivität mit einem _Active Directory_- oder _Workgroup_-Setup zu konfigurieren.
++
+*** Wenn Sie ein Workgroup-Setup auswählen, geben Sie den Server- und Workgroup-Namen für eine Arbeitsgruppe ein, die für CIFS konfiguriert ist.
+*** Wenn Sie ein Active Directory-Setup auswählen, müssen Sie die folgenden Konfigurationsinformationen angeben.
++
+.Active Directory-Konfiguration
+[%collapsible%open]
+====
+[cols="25,75"]
+|===
+| Feld | Beschreibung 
+
+
+| Primäre DNS-IP-Adresse | Die IP-Adressen der DNS-Server, die eine Namensauflösung für den CIFS-Server liefern. Der aufgeführte DNS-Server muss die Datensätze für den Servicesort (SRV) enthalten, die für die Suche nach den Active Directory-LDAP-Servern und Domänencontrollern für die Domäne erforderlich sind, der der CIFS-Server Beitritt. 
+
+
+| Active Directory-Domäne, der Sie beitreten möchten | Der FQDN der Active Directory (AD)-Domäne, der der CIFS-Server beitreten soll. 
+
+
+| Anmeldeinformationen, die zur Aufnahme in die Domäne autorisiert sind | Der Name und das Kennwort eines Windows-Kontos mit ausreichenden Berechtigungen zum Hinzufügen von Computern zur angegebenen Organisationseinheit (OU) innerhalb der AD-Domäne. 
+
+
+| CIFS-Server-BIOS-Name | Ein CIFS-Servername, der in der AD-Domain eindeutig ist. 
+
+
+| Organisationseinheit | Die Organisationseinheit innerhalb der AD-Domain, die dem CIFS-Server zugeordnet werden soll. Der Standardwert lautet CN=Computers. 
+
+
+| DNS-Domäne | Die DNS-Domäne für die Storage Virtual Machine (SVM). In den meisten Fällen entspricht die Domäne der AD-Domäne. 
+
+
+| NTP-Server | Wählen Sie *NTP Server Configuration* aktivieren, um einen NTP-Server mit Active Directory-DNS zu konfigurieren. Wenn Sie einen NTP-Server mit einer anderen Adresse konfigurieren müssen, sollten Sie die API verwenden. Siehe https://docs.netapp.com/us-en/bluexp-automation/index.html["BlueXP Automation Dokumentation"^] Entsprechende Details. 
+|===
+====
+
+
+** **SVM löschen**: Sie können die Speicher-VM löschen. Sie müssen den Namen der Storage-VM überprüfen, um sie zu löschen.
++
+
+NOTE: Sie müssen alle Volumes auf der Speicher-VM löschen, bevor Sie die Speicher-VM löschen.
+
+
+
+

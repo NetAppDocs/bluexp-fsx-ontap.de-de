@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: use/task-manage-working-environment.html 
-keywords: amazon fsx for netapp ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity 
-summary: Mit BlueXP können Sie Ihre FSX für ONTAP Arbeitsumgebung managen. Sie ermöglichen automatisches Kapazitätsmanagement, ändern Durchsatz und Storage-Kapazität sowie IOPS und entfernen oder löschen die Arbeitsumgebung. 
+keywords: amazon fsx for netapp ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity, replication, classification, sync, backup, recovery 
+summary: Mit BlueXP können Sie Ihre FSX für ONTAP Arbeitsumgebung managen. Sie können automatisches Kapazitätsmanagement aktivieren, Durchsatz und Storage-Kapazität sowie IOPS ändern, die Arbeitsumgebung entfernen oder löschen und Datenservices wie Backup und Recovery, Copy und Synchronisierung, Klassifizierung, Replizierung und Caching von Volumes managen. 
 ---
 = Verwalten einer Arbeitsumgebung von Amazon FSX für NetApp ONTAP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Mit BlueXP können Sie Ihre FSX für ONTAP Arbeitsumgebung managen. Sie
 
 
 [role="lead"]
-Mit BlueXP können Sie Ihre FSX für ONTAP Arbeitsumgebung managen. Sie ermöglichen automatisches Kapazitätsmanagement, ändern Durchsatz und Storage-Kapazität sowie IOPS und entfernen oder löschen die Arbeitsumgebung.
+Mit BlueXP können Sie Ihre FSX für ONTAP Arbeitsumgebung managen. Sie können automatisches Kapazitätsmanagement aktivieren, Durchsatz und Storage-Kapazität sowie IOPS ändern, die Arbeitsumgebung entfernen oder löschen und Datenservices wie Backup und Recovery, Copy und Synchronisierung, Klassifizierung, Replizierung und Caching von Volumes managen.
 
 
 
@@ -154,4 +154,21 @@ NOTE: Ausgefallene Volumes müssen über die AWS Management Console oder CLI gel
 image:screenshot_fsx_working_environment_delete.png["Ein Screenshot der Löschoption für FSX für ONTAP aus der BlueXP-Schnittstelle."]
 
 . Geben Sie den Namen der Arbeitsumgebung ein und wählen Sie *Löschen*.
+
+
+
+
+== Management von Datenservices
+
+Sie können zusätzliche Datenservices über die Arbeitsumgebung von Amazon FSX for NetApp ONTAP verwalten.
+
+image:data-services.png["Ein Screenshot der Registerkarte Data Services in der Arbeitsumgebung"]
+
+Weitere Informationen zum Konfigurieren von Datendiensten finden Sie unter:
+
+* link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["BlueXP Backup und Recovery"^] Bietet effizienten, sicheren und kostengünstigen Datenschutz für NetApp ONTAP-Daten, persistente Kubernetes-Volumes, Datenbanken und Virtual Machines – sowohl vor Ort als auch in der Cloud.
+* link:https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["BlueXP Kopier- und Synchronisierungsfunktion"^] Ist ein Cloud-Replizierungs- und -Synchronisierungsservice für die Übertragung von NAS-Daten zwischen lokalen und Cloud-Objektspeichern.
+* link:https://docs.netapp.com/us-en/bluexp-classification/index.html["BlueXP Klassifizierung"^] Ermöglicht Ihnen den Scan und die Klassifizierung von Daten in der Hybrid-Multi-Cloud Ihres Unternehmens.
+* link:https://docs.netapp.com/us-en/bluexp-replication/index.html["Datenreplizierung"^] Zwischen ONTAP Storage-Systemen zur Unterstützung von Backup und Disaster Recovery in der Cloud oder zwischen Clouds.
+* link:https://docs.netapp.com/us-en/bluexp-volume-caching/index.html["Volume-Caching"^] Stellt ein persistentes, beschreibbares Volume an einem Remote-Standort bereit. BlueXP Volume-Caching beschleunigt den Zugriff auf Daten und erleichtert die Verlagerung von Datenverkehr von Volumes, auf die sehr viel zugegriffen wird.
 

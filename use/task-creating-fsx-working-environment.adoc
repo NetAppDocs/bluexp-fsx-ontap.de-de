@@ -112,16 +112,16 @@ image:screenshot_add_fsx_cloud.png["Ein Screenshot von Amazon FSX for NetApp ONT
 
 == Erkennung eines vorhandenen FSX für ONTAP-Dateisystems
 
-Wenn Sie zuvor Ihre AWS Zugangsdaten für BlueXP zur Verfügung gestellt haben, kann *My Opportunities* FSX für ONTAP Dateisysteme automatisch erkennen und vorschlagen, mit BlueXP hinzuzufügen und zu verwalten. Sie können auch verfügbare Datenservices prüfen.
+Wenn Sie Ihre AWS-Anmeldedaten bereits bei BlueXP bereitgestellt haben, kann *Mein Anwesen* FSX for ONTAP-Filesysteme automatisch erkennen und vorschlagen, die mit BlueXP hinzugefügt und gemanagt werden sollen. Sie können auch verfügbare Datenservices prüfen.
 
 .Über diese Aufgabe
-Sie können FSX für ONTAP-Dateisysteme erkennen, wenn Sie <<Erstellen einer Arbeitsumgebung von Amazon FSX für NetApp ONTAP>> Oder über die Seite *Meine Möglichkeiten*. Diese Aufgabe beschreibt die Ermittlung unter Verwendung von *Meine Möglichkeiten*
+Sie können FSX für ONTAP-Dateisysteme erkennen, wenn Sie <<Erstellen einer Arbeitsumgebung von Amazon FSX für NetApp ONTAP>> Oder über die Seite *Mein Nachlass*. Diese Aufgabe beschreibt die Entdeckung mit *My estate*
 
 .Schritte
-. Klicken Sie in BlueXP auf die Registerkarte *Meine Chancen*.
+. Klicken Sie in BlueXP auf die Registerkarte *My estate*.
 . Die Anzahl der ermittelten FSX für ONTAP-Dateisysteme wird angezeigt. Klicken Sie Auf *Entdecken*.
 +
-image:screenshot-opportunities.png["Einen Screenshot der Seite „My Opportunities“ für FSX für ONTAP."]
+image:screenshot-opportunities.png["Ein Screenshot der My Estate-Seite für FSX für ONTAP."]
 
 . Wählen Sie ein oder mehrere Dateisysteme aus, und klicken Sie auf *Entdecken*, um sie dem Bildschirm hinzuzufügen.
 

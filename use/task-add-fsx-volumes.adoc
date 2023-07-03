@@ -22,13 +22,13 @@ Nach der Einrichtung der Arbeitsumgebung können Sie FSX für ONTAP Volumes erst
 
 Sie können NFS-, CIFS- und iSCSI-Volumes über Ihre FSX für ONTAP Arbeitsumgebung in BlueXP erstellen und managen. Volumes, die mit der ONTAP CLI erstellt wurden, werden auch in Ihrer FSX für ONTAP Arbeitsumgebung sichtbar sein.
 
-.Bevor Sie beginnen
-Bevor Sie ein neues Volume erstellen, benötigen Sie einen aktiven https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html["Anschluss in AWS"^].
-
-Wenn Sie SMB verwenden möchten, müssen Sie DNS und Active Directory eingerichtet haben. Weitere Informationen zur DNS- und Active Directory-Netzwerkkonfiguration finden Sie unter link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-manage-prereqs.html["AWS: Voraussetzungen für die Nutzung eines selbst gemanagten Microsoft AD"^].
-
 .Über diese Aufgabe
 Sie können Volumes hinzufügen, indem Sie die Arbeitsumgebung öffnen und die Registerkarte *Volumes* auswählen oder einfach die Arbeitsumgebung *Details* aus dem Bildschirm verwenden. Diese Aufgabe beschreibt das Hinzufügen von Volumes über das Fenster *Details*.
+
+.Bevor Sie beginnen
+* Sie benötigen eine aktive https://docs.netapp.com/us-en/bluexp-setup-admin/task-creating-connectors-aws.html["Anschluss in AWS"^].
+* Wenn Sie SMB verwenden möchten, müssen Sie DNS und Active Directory eingerichtet haben. Weitere Informationen zur DNS- und Active Directory-Netzwerkkonfiguration finden Sie unter link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-manage-prereqs.html["AWS: Voraussetzungen für die Nutzung eines selbst gemanagten Microsoft AD"^].
+
 
 .Schritte
 . Wählen Sie die Arbeitsumgebung FSX for ONTAP auf dem Bildschirm aus. Wenn Sie keinen Konnektor aktiviert haben, werden Sie aufgefordert, einen hinzuzufügen.
