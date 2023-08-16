@@ -4,7 +4,7 @@ permalink: use/task-manage-working-environment.html
 keywords: amazon fsx for netapp ontap, fsx, manage working environment, delete working environment, remove working environment, throughput capacity, change throughput, automatic capacity management, capacity management, storage capacity, replication, classification, sync, backup, recovery 
 summary: Mit BlueXP können Sie Ihre FSX für ONTAP Arbeitsumgebung managen. Sie können automatisches Kapazitätsmanagement aktivieren, Durchsatz und Storage-Kapazität sowie IOPS ändern, die Arbeitsumgebung entfernen oder löschen und Datenservices wie Backup und Recovery, Copy und Synchronisierung, Klassifizierung, Replizierung und Caching von Volumes managen. 
 ---
-= Verwalten einer Arbeitsumgebung von Amazon FSX für NetApp ONTAP
+= Verwalten einer FSX for ONTAP-Arbeitsumgebung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -116,7 +116,7 @@ image:screenshot-configure-iops.png["Ein Screenshot der Seite, um die Storage-Ka
 
 == Entfernen Sie FSX for ONTAP aus dem Arbeitsbereich
 
-Sie können FSX für ONTAP von BlueXP entfernen, ohne Ihr FSX für ONTAP-Konto oder -Volumes zu löschen. Sie können die Arbeitsumgebung FSX für ONTAP jederzeit wieder in BlueXP einbinden.
+Sie können FSX for ONTAP aus BlueXP entfernen, ohne Ihr Konto oder Ihre Volumes zu löschen. Sie können die Arbeitsumgebung FSX für ONTAP jederzeit wieder in BlueXP einbinden.
 
 .Schritte
 . Öffnen Sie die Arbeitsumgebung. Wenn Sie keinen Connector in AWS haben, wird der Bildschirm zur Eingabeaufforderung angezeigt. Sie können dies ignorieren und mit dem Entfernen der Arbeitsumgebung fortfahren.
@@ -160,7 +160,7 @@ image:screenshot_fsx_working_environment_delete.png["Ein Screenshot der Löschop
 
 == Management von Datenservices
 
-Sie können zusätzliche Datenservices über die Arbeitsumgebung von Amazon FSX for NetApp ONTAP verwalten.
+Sie können zusätzliche Datenservices aus der Arbeitsumgebung FSX for ONTAP verwalten.
 
 image:data-services.png["Ein Screenshot der Registerkarte Data Services in der Arbeitsumgebung"]
 

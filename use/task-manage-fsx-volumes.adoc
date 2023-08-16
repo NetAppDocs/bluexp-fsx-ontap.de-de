@@ -4,7 +4,7 @@ permalink: use/task-manage-fsx-volumes.html
 keywords: fsx for ontap, fsx, aws, delete volumes, delete nfs volumes, delete cifs volumes, tiering policy, mount path, get mount path, mount volume, delete volumes, snapshots, edit volume, clone volume, clone 
 summary: Sie können Volumes, Klone und Snapshots managen und die Tiering-Richtlinien für FSX für ONTAP mithilfe von BlueXP ändern. 
 ---
-= Management von Volumes für Amazon FSX für NetApp ONTAP
+= Management von Volumes für FSX für ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -62,7 +62,7 @@ Nachdem Sie ein Volume erstellt haben, können Sie aus einem neuen Snapshot ein 
 
 == Verwalten von Volume-Tags
 
-Sie können Volume-Tags hinzufügen, ändern oder löschen. In BlueXP hinzugefügte Tags werden auch in der AWS Konsole angezeigt. Es kann bis zu einer Stunde dauern, bis Tags mit der AWS-Konsole synchronisiert sind.
+Sie können Volume-Tags hinzufügen, ändern oder löschen. In BlueXP hinzugefügte Tags werden auch in der AWS Management Console angezeigt. Das Synchronisieren von Tags mit der AWS Management Console kann bis zu einer Stunde dauern.
 
 
 NOTE: Sie können die in BlueXP erstellten Volume-Tags erst bearbeiten, wenn sie mit AWS synchronisiert wurden. Dies kann bis zu einer Stunde dauern. Wenn die Option *Volume-Tags verwalten* ausgegraut ist, hat AWS die Volume-Tags noch nicht synchronisiert.

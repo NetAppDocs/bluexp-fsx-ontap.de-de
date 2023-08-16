@@ -4,7 +4,7 @@ permalink: use/task-creating-fsx-working-environment.html
 keywords: Amazon FSx for NetApp ONTAP, fsx, volumes, create working environment, delete working environment, access key, secret key, region, working environment, availability zones, discover, storage capacity, iops, throughput, security group, security 
 summary: Mit BlueXP können Sie eine FSX für ONTAP-Arbeitsumgebungen erstellen oder erkennen, um Volumes und zusätzliche Datenservices hinzuzufügen und zu managen. 
 ---
-= Erstellen oder ermitteln Sie eine Arbeitsumgebung von Amazon FSX for NetApp ONTAP
+= Erstellen oder ermitteln Sie eine FSX for ONTAP-Arbeitsumgebung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,7 +18,7 @@ Mithilfe von BlueXP können Sie eine FSX für ONTAP-Arbeitsumgebung erstellen un
 
 
 
-== Erstellen einer Arbeitsumgebung von Amazon FSX für NetApp ONTAP
+== FSX für ONTAP-Arbeitsumgebungen erstellen
 
 Im ersten Schritt wird ein FSX für die ONTAP-Arbeitsumgebung erstellt. Wenn Sie bereits ein FSX für ONTAP-Dateisystem in der AWS-Verwaltungskonsole erstellt haben, können Sie dies tun link:task-creating-fsx-working-environment.html#discover-an-existing-fsx-for-ontap-file-system["Entdecken Sie es mit BlueXP"].
 
@@ -32,7 +32,7 @@ Bevor Sie Ihre FSX für ONTAP-Arbeitsumgebung in BlueXP erstellen, benötigen Si
 .Schritte
 . Fügen Sie in BlueXP eine neue Arbeitsumgebung hinzu, wählen Sie *Amazon Web Services* aus und klicken Sie für Amazon FSX for NetApp ONTAP auf *neu hinzufügen*.
 +
-image:screenshot_add_fsx_working_env.png["Ein Screenshot des Hinzufügens einer Arbeitsumgebung für Amazon FSX für NetApp ONTAP"]
+image:screenshot_add_fsx_working_env.png["Ein Screenshot des Hinzufügens einer Arbeitsumgebung für FSX für ONTAP"]
 
 . * FSX für ONTAP-Authentifizierung*
 +
@@ -44,7 +44,7 @@ image:screenshot_add_fsx_working_env.png["Ein Screenshot des Hinzufügens einer 
 +
 .. Geben Sie den Namen der Arbeitsumgebung ein, die Sie verwenden möchten.
 .. Optional können Sie Tags erstellen, indem Sie auf das Pluszeichen klicken und einen Tag-Namen und -Wert eingeben.
-.. Optional können Sie die Startzeit für Amazon FSX für NetApp ONTAP angeben, um eine wöchentliche Wartung mit einer Dauer von 30 Minuten durchzuführen. Dies kann verwendet werden, um sicherzustellen, dass die Wartung nicht mit wichtigen Geschäftsaktivitäten übereinstimmt. Wenn Sie *Keine Präferenz* auswählen, wird eine zufällige Startzeit zugewiesen. Sie können dies jederzeit ändern.
+.. Optional können Sie die Startzeit für FSX für ONTAP angeben, um eine wöchentliche Wartung von 30 Minuten durchzuführen. Dies kann verwendet werden, um sicherzustellen, dass die Wartung nicht mit wichtigen Geschäftsaktivitäten übereinstimmt. Wenn Sie *Keine Präferenz* auswählen, wird eine zufällige Startzeit zugewiesen. Sie können dies jederzeit ändern.
 .. Geben Sie das ONTAP-Cluster-Passwort ein, das Sie verwenden möchten, und bestätigen Sie es.
 .. Deaktivieren Sie optional die Option, dasselbe Passwort für Ihren SVM-Benutzer zu verwenden, und legen Sie ein anderes Passwort fest.
 
@@ -106,7 +106,7 @@ NOTE: Wenn Sie einen IOPS-Wert angeben, der die Mindestanforderungen nicht erfü
 .Ergebnis
 BlueXP zeigt Ihre FSX for ONTAP Konfiguration auf dem Bildschirm an. Sie können jetzt mit BlueXP Volumes zu Ihrer FSX für ONTAP Arbeitsumgebung hinzufügen.
 
-image:screenshot_add_fsx_cloud.png["Ein Screenshot von Amazon FSX for NetApp ONTAP auf der Seite Arbeitsumgebungen."]
+image:screenshot_add_fsx_cloud.png["Ein Screenshot von FSX for ONTAP auf der Seite Arbeitsumgebungen."]
 
 
 
@@ -115,7 +115,7 @@ image:screenshot_add_fsx_cloud.png["Ein Screenshot von Amazon FSX for NetApp ONT
 Wenn Sie Ihre AWS-Anmeldedaten bereits bei BlueXP bereitgestellt haben, kann *Mein Anwesen* FSX for ONTAP-Filesysteme automatisch erkennen und vorschlagen, die mit BlueXP hinzugefügt und gemanagt werden sollen. Sie können auch verfügbare Datenservices prüfen.
 
 .Über diese Aufgabe
-Sie können FSX für ONTAP-Dateisysteme erkennen, wenn Sie <<Erstellen einer Arbeitsumgebung von Amazon FSX für NetApp ONTAP>> Oder über die Seite *Mein Nachlass*. Diese Aufgabe beschreibt die Entdeckung mit *My estate*
+Sie können FSX für ONTAP-Dateisysteme erkennen, wenn Sie <<FSX für ONTAP-Arbeitsumgebungen erstellen>> Oder über die Seite *Mein Nachlass*. Diese Aufgabe beschreibt die Entdeckung mit *My estate*
 
 .Schritte
 . Klicken Sie in BlueXP auf die Registerkarte *My estate*.

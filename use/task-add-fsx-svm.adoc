@@ -4,7 +4,7 @@ permalink: use/task-add-fsx-svm.html
 keywords: fsx for ontap, fsx, aws, storage vm, storage virtual machine, svm, add svm, virtual machine, delete svm, tags, smb, cifs, delete 
 summary: 'Nachdem Sie Ihre Arbeitsumgebung erstellt haben, können Sie Storage Virtual Machines (VMs) in einem verwalteten Amazon FSX for NetApp ONTAP-Cluster hinzufügen, anzeigen und managen.' 
 ---
-= Hinzufügen und Managen von Storage-VMs für Amazon FSX for NetApp ONTAP
+= Hinzufügen und Managen von Storage-VMs für FSX für ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 'Nachdem Sie Ihre Arbeitsumgebung erstellt haben, können Sie Storage V
 
 
 [role="lead"]
-Nachdem Sie Ihre Arbeitsumgebung erstellt haben, können Sie eine Storage Virtual Machine (VM) hinzufügen, anzeigen und managen - auch als _SVM_- auf einem verwalteten Amazon FSX for NetApp ONTAP-Cluster bezeichnet.
+Nachdem Sie Ihre Arbeitsumgebung erstellt haben, können Sie eine Storage Virtual Machine (VM) hinzufügen, anzeigen und managen - auch als _SVM_- auf einem Managed FSX for ONTAP-Cluster bezeichnet.
 
 
 
 == Fügen Sie eine Storage-VM hinzu
 
-Mit BlueXP können Sie bis zu der maximal zulässigen Anzahl Storage-VMs zum Filesystem Amazon FSX für ONTAP hinzufügen. Siehe link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html["AWS – Management von FSX für ONTAP Storage Virtual Machines"^] Entsprechende Details.
+Mit BlueXP können Sie bis zur maximal zulässigen Anzahl Storage-VMs zum FSX für ONTAP Filesystem hinzufügen. Siehe link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html["AWS – Management von FSX für ONTAP Storage Virtual Machines"^] Entsprechende Details.
 
 .Über diese Aufgabe
 Sie können eine Speicher-VM hinzufügen, indem Sie die Arbeitsumgebung öffnen und die Registerkarte *Speicher-VMs* oder aus dem Bedienfeld der Arbeitsumgebung *Übersicht* auswählen. Diese Aufgabe beschreibt das Hinzufügen einer Speicher-VM über das Feld *Speicher-VMs*.
@@ -48,7 +48,7 @@ image:svm-add.png["Ein Screenshot aus dem Bereich Storage VMs."]
 
 
 .Ergebnis
-Die neue Storage-VM wird der Arbeitsumgebung und dem Filesystem Amazon FSX for NetApp ONTAP hinzugefügt.
+Die neue Storage-VM wird der Arbeitsumgebung und dem Filesystem FSX für ONTAP hinzugefügt.
 
 
 
@@ -69,7 +69,7 @@ image:svm-manage.png["Ein Screenshot aus dem Menü der Option „Storage VM mana
 . Wählen Sie eine Menüoption aus, um die Einstellungen für die Storage VM anzuzeigen oder zu verwalten.
 +
 ** **SVM-Details anzeigen**: Sie können Details wie Root-Volume, Sicherheitsstil, zulässige Protokolle, Active Directory-Domäne und Tags überprüfen.
-** **SVM-Tags verwalten**: Sie können Storage-VM-Tags hinzufügen, bearbeiten oder entfernen. Die vorgenommenen Änderungen werden mit der AWS-Konsole synchronisiert.
+** **SVM-Tags verwalten**: Sie können Storage-VM-Tags hinzufügen, bearbeiten oder entfernen. Die vorgenommenen Änderungen werden mit der AWS Management Console synchronisiert.
 ** **SMB/CIFS einrichten**: Wenn dies die erste CIFS-Verbindung für diese Arbeitsumgebung ist, werden Sie aufgefordert, die CIFS-Konnektivität mit einem _Active Directory_- oder _Workgroup_-Setup zu konfigurieren.
 +
 *** Wenn Sie ein Workgroup-Setup auswählen, geben Sie den Server- und Workgroup-Namen für eine Arbeitsgruppe ein, die für CIFS konfiguriert ist.

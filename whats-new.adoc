@@ -14,7 +14,7 @@ summary: Erfahren Sie mehr über die Neuerungen in Amazon FSX for NetApp ONTAP.
 
 
 [role="lead"]
-Erfahren Sie mehr über die Neuerungen in Amazon FSX for NetApp ONTAP.
+Erfahren Sie mehr über die Neuerungen in FSX for ONTAP.
 
 
 
