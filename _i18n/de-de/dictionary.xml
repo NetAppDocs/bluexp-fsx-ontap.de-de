@@ -4,7 +4,6 @@
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX für ONTAP</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">Funktionen</block>
   <block id="5e63cf07e8c4e2bc02fec4b907bfcc00" category="list-text">Die Konfiguration oder das Management von Storage-Systemen, Software oder Backups ist nicht erforderlich.</block>
-  <block id="620d7e4da65c27b65a66bca15517b802" category="list-text">Unterstützung für CIFS-, NFSv3-, NFSv4.x- und SMB v2.0 - v3.1.1-Protokolle</block>
   <block id="f6ad83cb7f527e383e392f709849a098" category="list-text">Kostengünstige, praktisch unbegrenzte Storage-Kapazität auf dem verfügbaren IA Storage Tier (selten zugegriffen)</block>
   <block id="3c36508c8697f7ec7a94803545518d69" category="list-text">Für die Ausführung auf latenzempfindlichen Applikationen, einschließlich Oracle RAC, zertifiziert.</block>
   <block id="6c2a9ed4ea140413912e894a10672e01" category="list-text">Optionen für Pakete und Pay-as-you-go-Preise:</block>
@@ -822,4 +821,5 @@
   <block id="5490038d2be728c6d3679ab6915e87e3" category="list-text">Kopieren Sie die Rolle ARN der IAM-Rolle, sodass Sie sie im nächsten Schritt in BlueXP einfügen können.</block>
   <block id="1a913f679da8e614b14423480f9ce6be" category="paragraph">Wenn Sie gerade die IAM-Rolle erstellt haben, warten Sie einige Minuten, bis die neuen Anmeldeinformationen verfügbar sind.</block>
   <block id="a2841ca82f44794bf8912d92f8eaf4d6" category="list-text">*Credentials definieren*: Geben Sie einen *Credentials-Namen* und die *role ARN* und *External ID* (falls angegeben) an, die Sie bei Ihnen erstellt haben <block ref="a1061025d6c6e25a2b8607068ce69197" category="inline-xref-macro-rx"></block>.</block>
+  <block id="1d2976e5126e0cf8526afeab66bc8fa3" category="list-text">Unterstützung der Protokolle CIFS, iSCSI, NFSv3, NFSv4.x und SMB v2.0 - V3.1.1</block>
 </blocks>
