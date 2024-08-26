@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: start/concept-fsx-aws.html 
 keywords: Amazon FSx for NetApp ONTAP, volumes, aws, access key, secret key, cloud manager 
-summary: Amazon FSX for NetApp ONTAP ist ein vollständig gemanagter Service, mit dem Kunden Dateisysteme mit dem NetApp ONTAP Storage-Betriebssystem starten und ausführen können. FSX für ONTAP bietet dieselben Funktionen, Performance und Managementfunktionen, die NetApp Kunden heute vor Ort nutzen. Außerdem bietet sie die Einfachheit, Agilität, Sicherheit und Skalierbarkeit eines nativen AWS Service. 
+summary: Amazon FSX for NetApp ONTAP ist ein vollständig gemanagter Service, mit dem Kunden Dateisysteme mit dem Storage-Betriebssystem ONTAP von NetApp starten und ausführen können. FSX für ONTAP bietet dieselben Funktionen, Performance und Managementfunktionen, die NetApp Kunden heute vor Ort nutzen. Außerdem bietet sie die Einfachheit, Agilität, Sicherheit und Skalierbarkeit eines nativen AWS Service. 
 ---
 = Weitere Informationen zu Amazon FSX für NetApp ONTAP
 :hardbreaks:
@@ -21,7 +21,7 @@ link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["A
 == Funktionen
 
 * Die Konfiguration oder das Management von Storage-Systemen, Software oder Backups ist nicht erforderlich.
-* Unterstützung der Protokolle CIFS, iSCSI, NFSv3, NFSv4.x und SMB v2.0 - V3.1.1
+* Unterstützung der https://docs.netapp.com/us-en/ontap/s3-config/ontap-version-support-s3-concept.html["S3"^] Protokolle CIFS, iSCSI, NFSv3, NFSv4.x und SMB v2.0 - V3.1.1
 * Kostengünstige, praktisch unbegrenzte Storage-Kapazität auf dem verfügbaren IA Storage Tier (selten zugegriffen)
 * Für die Ausführung auf latenzempfindlichen Applikationen, einschließlich Oracle RAC, zertifiziert.
 * Optionen für Pakete und Pay-as-you-go-Preise:
