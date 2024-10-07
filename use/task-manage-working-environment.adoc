@@ -114,7 +114,7 @@ image:screenshot-configure-iops.png["Ein Screenshot der Seite, um die Storage-Ka
 
 
 
-== Entfernen Sie FSX for ONTAP aus dem Arbeitsbereich
+== Entfernen Sie FSX for ONTAP aus dem Projekt oder Arbeitsbereich
 
 Sie können FSX for ONTAP aus BlueXP entfernen, ohne Ihr Konto oder Ihre Volumes zu löschen. Sie können die Arbeitsumgebung FSX für ONTAP jederzeit wieder in BlueXP einbinden.
 
