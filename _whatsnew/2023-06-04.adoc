@@ -1,0 +1,15 @@
+= Startzeit des Wartungsfenster
+:allow-uri-read: 
+
+
+
+
+=== Startzeit des Wartungsfenster
+
+Wenn link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["Schaffung einer Arbeitsumgebung"], Sie können die Startzeit für das wöchentliche 30-minütige Wartungsfenster angeben, um sicherzustellen, dass die Wartung nicht mit kritischen Geschäftsaktivitäten in Konflikt steht.
+
+
+
+=== Verteilung von Volume-Daten über FlexGroups
+
+Wenn link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["Erstellen eines Volumes"], Sie können die Datenoptimierung durch Erstellen einer FlexGroup zur Verteilung von Daten über Volumes.
