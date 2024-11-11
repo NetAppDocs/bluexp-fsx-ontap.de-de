@@ -18,6 +18,18 @@ Erfahren Sie mehr über die Neuerungen in FSX for ONTAP.
 
 
 
+== Bis 11. November 2024
+
+
+
+=== FSX für ONTAP lässt sich in Storage in die BlueXP  Workload-Fabrik integrieren
+
+FSX für ONTAP-Filesystem-Management-Aufgaben wie das Hinzufügen von Volumes, das erweitern der Filesystem-Kapazität und das Managen von Storage-VMs werden jetzt in der BlueXP  Workload Factory gemanagt, einem neuen Service von NetApp und Amazon FSX für NetApp ONTAP. Sie können Ihre vorhandenen Anmeldeinformationen und Berechtigungen wie zuvor verwenden. Der Unterschied ist, dass Sie jetzt mehr aus BlueXP  Workload Factory heraus tun können, um Ihre Dateisysteme zu verwalten. Wenn Sie eine FSX for ONTAP-Arbeitsumgebung aus dem BlueXP -Arbeitsbereich öffnen, werden Sie direkt zur BlueXP -Workload-Fabrik gehen.
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html#features["Erfahren Sie mehr über FSX für ONTAP-Funktionen in der BlueXP  Workload-Fabrik"^]
+
+
+
 == 30 Juli 2023
 
 
@@ -43,6 +55,22 @@ Das ist jetzt möglich link:https://docs.netapp.com/us-en/cloud-manager-fsx-onta
 === **Meine Möglichkeiten** Tab ist jetzt **Mein Anwesen**
 
 Die Registerkarte **Meine Möglichkeiten** ist jetzt **Mein Anwesen**. Die Dokumentation wird aktualisiert, um den neuen Namen wiederzugeben.
+
+
+
+== 04 Juni 2023
+
+
+
+=== Startzeit des Wartungsfenster
+
+Wenn link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["Schaffung einer Arbeitsumgebung"], Sie können die Startzeit für das wöchentliche 30-minütige Wartungsfenster angeben, um sicherzustellen, dass die Wartung nicht mit kritischen Geschäftsaktivitäten in Konflikt steht.
+
+
+
+=== Verteilung von Volume-Daten über FlexGroups
+
+Wenn link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["Erstellen eines Volumes"], Sie können die Datenoptimierung durch Erstellen einer FlexGroup zur Verteilung von Daten über Volumes.
 
 
 

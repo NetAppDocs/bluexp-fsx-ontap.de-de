@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: requirements/task-setting-up-permissions-fsx.html 
-keywords: fsx for ontap, iam, user role, permissions, aws govcloud, govcloud, credentials 
+keywords: fsx for ontap, iam, user role, permissions, credentials 
 summary: Zum Erstellen oder Managen einer FSX for ONTAP-Arbeitsumgebung müssen Sie AWS-Zugangsdaten zu BlueXP hinzufügen. Dazu stellen Sie den ARN einer IAM-Rolle bereit, die BlueXP die Berechtigungen gibt, die zum Erstellen einer FSX for ONTAP-Arbeitsumgebung erforderlich sind. 
 ---
 = Einrichten von Berechtigungen für FSX für ONTAP
@@ -18,134 +18,192 @@ Zum Erstellen oder Managen einer FSX for ONTAP-Arbeitsumgebung müssen Sie AWS-Z
 
 
 
-== Einrichten der IAM-Rolle
+== Warum AWS Zugangsdaten erforderlich sind
 
-Richten Sie eine IAM-Rolle ein, mit der BlueXP die Rolle übernehmen kann.
+Zum Erstellen und Managen von FSX for ONTAP-Arbeitsumgebungen in BlueXP  sind AWS Zugangsdaten erforderlich. Sie können neue AWS-Anmeldedaten erstellen oder zu einer bestehenden BlueXP -Organisation AWS-Anmeldedaten hinzufügen. Zugangsdaten bieten BlueXP  die Berechtigungen, die zum Managen von Ressourcen und Prozessen in der AWS Cloud-Umgebung erforderlich sind.
+
+Anmeldeinformationen und Berechtigungen werden über die BlueXP -Workload-Fabrik verwaltet. Die BlueXP  Workload Factory ist eine Lifecycle-Managementplattform, mit der Benutzer Workloads mit Amazon FSX für NetApp ONTAP-Filesystemen optimieren können. BlueXP  verwendet denselben Satz an AWS-Zugangsdaten und -Berechtigungen wie die Werkseinstellungen für BlueXP -Workloads.
+
+Die Workload-Schnittstelle bietet BlueXP  Benutzern Optionen, um Workload-Funktionen wie Storage, VMware, Datenbanken und GenAI zu aktivieren und Berechtigungen für die Workloads auszuwählen. _Storage_ ist die Storage-Management-Funktion in der Workload Factory. Sie ist die einzige Funktion, die Sie benötigen, um Anmeldeinformationen zu aktivieren und hinzuzufügen, um Ihre FSX für ONTAP Filesysteme zu erstellen und zu managen.
+
+
+
+== Über diese Aufgabe
+
+Wenn Sie neue Zugangsdaten für FSX for ONTAP aus Storage in der BlueXP  Workload Factory hinzufügen, müssen Sie entscheiden, in welcher Berechtigungsstufe bzw. welchem Betriebsmodus Sie arbeiten möchten. Um AWS-Ressourcen wie FSX for ONTAP-Dateisysteme zu erkennen und bereitzustellen, benötigen Sie _read_ oder _Automate_-Berechtigungen. BlueXP  FSX für ONTAP arbeitet im _BASIC_ Modus, es sei denn, Sie wählen den _Read_ Modus oder den _Automate_ Modus. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html.html["Weitere Informationen zu Betriebsmodi"].
+
+Neue und vorhandene AWS Zugangsdaten können über die BlueXP -Einstellungen > *Anmeldedaten*-Seite aufgerufen werden.
+
+Sie können Anmeldeinformationen mit zwei Methoden hinzufügen:
+
+* *Manuell*: Sie erstellen die IAM-Richtlinie und die IAM-Rolle in Ihrem AWS-Konto, während Sie Anmeldeinformationen in der Workload Factory hinzufügen.
+* *Automatisch*: Sie erfassen eine minimale Menge an Informationen über Berechtigungen und verwenden dann einen CloudFormation-Stack, um die IAM-Richtlinien und Rolle für Ihre Anmeldeinformationen zu erstellen.
+
+
+
+
+== Fügen Sie einem Konto manuell Anmeldeinformationen hinzu
+
+Sie können die AWS-Anmeldedaten manuell zu BlueXP  hinzufügen, um Ihrem Konto die Berechtigungen zu erteilen, die zum Management der AWS-Ressourcen erforderlich sind, die Sie für die Ausführung Ihrer individuellen Workloads verwenden. Jeder Satz von Anmeldeinformationen, den Sie hinzufügen, enthält eine oder mehrere IAM-Richtlinien, die auf den Workload-Funktionen basieren, die Sie verwenden möchten, und eine IAM-Rolle, die Ihrem Konto zugewiesen ist.
+
+Die Erstellung der Anmeldedaten besteht aus drei Teilen:
+
+* Wählen Sie die gewünschte Service- und Berechtigungsebene aus und erstellen Sie anschließend IAM-Richtlinien über die AWS Management Console.
+* Erstellen Sie eine IAM-Rolle über die AWS Management Console.
+* Bei Workloads in BlueXP  geben Sie einen Namen ein und geben die Zugangsdaten ein.
+
+
+Zum Erstellen oder Managen einer FSX for ONTAP-Arbeitsumgebung müssen Sie AWS-Zugangsdaten zu BlueXP hinzufügen. Dazu stellen Sie den ARN einer IAM-Rolle bereit, die BlueXP die Berechtigungen gibt, die zum Erstellen einer FSX for ONTAP-Arbeitsumgebung erforderlich sind.
+
+.Bevor Sie beginnen
+Um sich bei Ihrem AWS-Konto anzumelden, müssen Sie über Anmeldedaten verfügen.
 
 .Schritte
-. Wechseln Sie im Zielkonto zur IAM-Konsole.
-. Gewähren Sie BlueXP Zugriff auf das AWS Konto. Klicken Sie unter Zugriffsverwaltung auf *Rollen > Rolle erstellen* und befolgen Sie die Schritte zum Erstellen der Rolle.
+. Wählen Sie in der BlueXP -Konsole das Symbol *Einstellungen* und dann *Anmeldeinformationen*.
+. Wählen Sie *Anmeldeinformationen hinzufügen*.
+. Wählen Sie *Amazon Web Services*, dann *FSX für ONTAP* und dann *Weiter*.
 +
-** Wählen Sie unter *Vertrauenswürdiger Entitätstyp* *AWS-Konto* aus.
-** Wählen Sie *another AWS Account* aus und geben Sie die BlueXP *Account-ID* ein:
+Sie befinden sich jetzt auf der Seite *Zugangsdaten hinzufügen* in der BlueXP  Workload Factory.
+
+. Wählen Sie *manuell hinzufügen* und befolgen Sie die nachstehenden Schritte, um die drei Abschnitte unter _Berechtigungskonfiguration_ auszufüllen.
 +
-*** Für BlueXP SaaS: 952013314444
-*** Für AWS GovCloud (USA): 033442085313
+image:screenshot-add-credentials-manually.png["Ein Screenshot mit den Elementen, die Sie manuell für jeden Satz von Anmeldeinformationen definieren müssen."]
+
+
+
+
+
+=== Schritt 1: Wählen Sie die Workload-Funktionen aus und erstellen Sie die IAM-Richtlinien
+
+In diesem Abschnitt legen Sie fest, welche Arten von Workload-Funktionen im Rahmen dieser Anmeldedaten gemanagt werden können und welche Berechtigungen für jeden Workload aktiviert werden. Sie müssen die Richtlinienberechtigungen für jeden ausgewählten Workload aus der Codebox kopieren und zur Erstellung der Richtlinien in die AWS Management Console innerhalb Ihres AWS-Kontos hinzufügen.
+
+image:screenshot-create-policies-manual.png["Ein Screenshot, der zeigt, welche Workload-Funktionen im Rahmen der Richtlinien in diesen Anmeldedaten gemanagt werden können."]
+
+.Schritte
+. Aktivieren Sie im Abschnitt *Richtlinien erstellen* die Workload-Funktionen, die Sie in diese Anmeldedaten aufnehmen möchten. Aktivieren Sie *Storage*, um Dateisysteme zu erstellen und zu verwalten.
 +
+Sie können später weitere Funktionen hinzufügen. Wählen Sie also einfach die Workloads aus, die Sie aktuell implementieren und managen möchten.
 
-NOTE: Um die Sicherheit zu erhöhen, empfehlen wir Ihnen, einen anzugeben link:https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html["_Externe ID_"^]. Für den Zugriff auf Ihr AWS Konto muss BlueXP die Rolle ARN (Amazon Resource Name) und die von Ihnen angegebene externe ID angeben. Dadurch wird verhindert, dass die link:https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html["Verwirrtes Stellvertreterproblem"^].
+. Wählen Sie für die Workload-Funktionen, die eine Auswahl an Berechtigungsstufen bieten (automatisieren oder lesen), den Berechtigungstyp aus, der mit diesen Zugangsdaten verfügbar sein wird. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Informieren Sie sich über die Berechtigungen, auch als Betriebsmodi bezeichnet"^].
+. Kopieren Sie im Codebox-Fenster die Berechtigungen für die erste IAM-Richtlinie.
+. Öffnen Sie ein anderes Browserfenster, und melden Sie sich bei Ihrem AWS-Konto in der AWS Management Console an.
+. Öffnen Sie den IAM-Dienst, und wählen Sie dann *Richtlinien* > *Richtlinie erstellen* aus.
+. Wählen Sie JSON als Dateityp aus, fügen Sie die Berechtigungen ein, die Sie in Schritt 3 kopiert haben, und wählen Sie *Weiter* aus.
+. Geben Sie den Namen für die Richtlinie ein und wählen Sie *Richtlinie erstellen*.
+. Wenn Sie in Schritt 1 mehrere Workload-Funktionen ausgewählt haben, wiederholen Sie diese Schritte, um eine Richtlinie für jeden Satz von Workload-Berechtigungen zu erstellen.
 
 
 
 
+=== Schritt 2: Erstellen Sie die IAM-Rolle, die die Richtlinien verwendet
 
-. Erstellen Sie eine Richtlinie, die die folgenden erforderlichen Mindestberechtigungen und optionalen Berechtigungen enthält, falls erforderlich.
+In diesem Abschnitt richten Sie eine IAM-Rolle ein, von der Workload Factory annimmt, dass sie die Berechtigungen und Richtlinien enthält, die Sie gerade erstellt haben.
+
+image:screenshot-create-role.png["Ein Screenshot, der zeigt, welche Berechtigungen Teil der neuen Rolle sind."]
+
+.Schritte
+. Wählen Sie in der AWS Management Console *Roles > Create Role* aus.
+. Wählen Sie unter *Vertrauenswürdiger Entitätstyp* *AWS-Konto* aus.
 +
-[role="tabbed-block"]
-====
-.Erforderliche Berechtigungen
---
-Die folgenden Mindestberechtigungen sind erforderlich, um BlueXP die Erstellung Ihres FSX für NetApp ONTAP Filesystems zu ermöglichen.
+.. Wählen Sie *another AWS Account* aus und kopieren Sie die Konto-ID für FSX for ONTAP Workload Management von der Benutzeroberfläche des BlueXP  Workload Factory und fügen Sie sie ein.
+.. Wählen Sie *required external ID* aus, und kopieren Sie die externe ID aus der Benutzeroberfläche von BlueXP  Workloads.
 
+
+. Wählen Sie *Weiter*.
+. Wählen Sie im Abschnitt „Berechtigungsrichtlinie“ alle zuvor definierten Richtlinien aus und wählen Sie *Weiter* aus.
+. Geben Sie einen Namen für die Rolle ein und wählen Sie *Rolle erstellen*.
+. Kopieren Sie die Rolle ARN.
+. Kehren Sie zur Seite BlueXP  Workloads Credentials hinzufügen zurück, erweitern Sie den Abschnitt *Create Role* und fügen Sie die ARN in das Feld _Role ARN_ ein.
+
+
+
+
+=== Schritt 3: Geben Sie einen Namen ein und fügen Sie die Anmeldeinformationen hinzu
+
+Im letzten Schritt geben Sie einen Namen für die Zugangsdaten in die BlueXP  Workload Factory ein.
+
+.Schritte
+. Erweitern Sie auf der Seite BlueXP  Workloads Add Credentials die Option *Credentials Name*.
+. Geben Sie den Namen ein, den Sie für diese Anmeldedaten verwenden möchten.
+. Wählen Sie *Hinzufügen*, um die Anmeldeinformationen zu erstellen.
+
+
+.Ergebnis
+Die Anmeldeinformationen werden erstellt und können auf der Seite Anmeldedaten angezeigt werden. Sie können die Anmeldeinformationen jetzt verwenden, wenn Sie eine FSX für ONTAP-Arbeitsumgebung erstellen.
+
+
+
+== Fügen Sie Anmeldeinformationen zu einem Konto über CloudFormation hinzu
+
+Sie können über einen AWS CloudFormation-Stack AWS-Zugangsdaten zu BlueXP -Workloads hinzufügen, indem Sie die zu verwendenden Workload-Funktionen auswählen und dann den AWS CloudFormation-Stack in Ihrem AWS-Konto starten. CloudFormation erstellt die IAM-Richtlinien und IAM-Rolle auf Basis der von Ihnen ausgewählten Workload-Funktionen.
+
+.Bevor Sie beginnen
+* Um sich bei Ihrem AWS-Konto anzumelden, müssen Sie über Anmeldedaten verfügen.
+* Sie müssen über die folgenden Berechtigungen in Ihrem AWS-Konto verfügen, wenn Sie Anmeldeinformationen mit einem CloudFormation-Stack hinzufügen:
++
 [source, json]
 ----
 {
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
-                "fsx:*",
-                "ec2:Describe*",
-                "ec2:CreateTags",
-                "iam:CreateServiceLinkedRole",
-                "kms:Describe*",
-                "kms:List*",
-                "kms:CreateGrant"
+                "cloudformation:CreateStack",
+                "cloudformation:UpdateStack",
+                "cloudformation:DeleteStack",
+                "cloudformation:DescribeStacks",
+                "cloudformation:DescribeStackEvents",
+                "cloudformation:DescribeChangeSet",
+                "cloudformation:ExecuteChangeSet",
+                "cloudformation:ListStacks",
+                "cloudformation:ListStackResources",
+                "cloudformation:GetTemplate",
+                "cloudformation:ValidateTemplate",
+                "lambda:InvokeFunction",
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:UpdateAssumeRolePolicy",
+                "iam:AttachRolePolicy",
+                "iam:CreateServiceLinkedRole"
             ],
             "Resource": "*"
         }
     ]
 }
 ----
---
-.Automatische Kapazität
---
-Für die Aktivierung sind die folgenden zusätzlichen Berechtigungen erforderlich link:../use/task-manage-working-environment.html["Automatisches Kapazitätsmanagement"].
 
-[source, json]
-----
-"cloudwatch:GetMetricData",
-"cloudwatch:GetMetricStatistics"
-----
---
-.Sicherheitsgruppen
---
-Die folgenden zusätzlichen Berechtigungen sind erforderlich, um BlueXP zu ermöglichen link:../use/task-creating-fsx-working-environment.html["Sicherheitsgruppen generieren"].
-
-[source, json]
-----
-"ec2:AuthorizeSecurityGroupEgress",
-"ec2:AuthorizeSecurityGroupIngress",
-"ec2:RevokeSecurityGroupEgress",
-"ec2:RevokeSecurityGroupIngress",
-"ec2:CreateSecurityGroup",
-"ec2:DeleteSecurityGroup",
-"cloudformation:CreateStack",
-"cloudformation:ValidateTemplate",
-"cloudformation:DescribeStacks",
-"cloudformation:DescribeStackEvents"
-----
---
-====
-. Kopieren Sie die Rolle ARN der IAM-Rolle, sodass Sie sie im nächsten Schritt in BlueXP einfügen können.
-
-
-.Ergebnis
-Die IAM-Rolle verfügt nun über die erforderlichen Berechtigungen.
-
-
-
-== Fügen Sie die Anmeldeinformationen hinzu
-
-Nachdem Sie die IAM-Rolle mit den erforderlichen Berechtigungen angegeben haben, fügen Sie die Rolle ARN zu BlueXP hinzu.
-
-.Bevor Sie beginnen
-Wenn Sie gerade die IAM-Rolle erstellt haben, warten Sie einige Minuten, bis die neuen Anmeldeinformationen verfügbar sind.
 
 .Schritte
-. Klicken Sie oben rechts in der BlueXP-Konsole auf das Symbol Einstellungen und wählen Sie *Anmeldeinformationen*.
+. Wählen Sie in der BlueXP -Konsole das Symbol *Einstellungen* und dann *Anmeldeinformationen*.
+. Wählen Sie *Anmeldeinformationen hinzufügen*.
+. Wählen Sie *Amazon Web Services*, dann *FSX für ONTAP* und dann *Weiter*. Sie befinden sich jetzt auf der Seite *Zugangsdaten hinzufügen* in der BlueXP  Workload Factory.
+. Wählen Sie *Add via AWS CloudFormation* aus.
 +
-image:screenshot_settings_icon.gif["Ein Screenshot, in dem das Symbol Einstellungen oben rechts in der BlueXP-Konsole angezeigt wird."]
+image:screenshot-add-credentials-cloudformation.png["Ein Screenshot mit den Elementen, die definiert werden müssen, bevor Sie CloudFormation starten können, um die Anmeldeinformationen zu erstellen."]
 
-. Klicken Sie auf *Anmeldeinformationen hinzufügen* und befolgen Sie die Schritte im Assistenten.
+. Aktivieren Sie unter *Create Policies* die Workload-Funktionen, die Sie in diese Anmeldedaten aufnehmen möchten, und wählen Sie eine Berechtigungsstufe für jeden Workload aus.
 +
-.. *Anmeldeort*: Wählen Sie *Amazon Web Services > BlueXP*.
-.. *Credentials definieren*: Geben Sie einen *Credentials-Namen* und die *role ARN* und *External ID* (falls angegeben) an, die Sie bei Ihnen erstellt haben <<Einrichten der IAM-Rolle>>.
+Sie können später weitere Funktionen hinzufügen. Wählen Sie also einfach die Workloads aus, die Sie aktuell implementieren und managen möchten.
+
+. Geben Sie unter *Name der Anmeldeinformationen* den Namen ein, den Sie für diese Anmeldeinformationen verwenden möchten.
+. Fügen Sie die Zugangsdaten von AWS CloudFormation hinzu:
 +
-[NOTE]
-====
-*** Wenn Sie ein AWS GovCloud (US) Konto nutzen, überprüfen Sie *Ich verwende ein AWS GovCloud (US) Konto*.
+.. Wählen Sie *Add* (oder wählen Sie *Redirect to CloudFormation*) und die Seite Redirect to CloudFormation wird angezeigt.
 +
-image:screenshot-govcloud-checkbox.png["Screenshot des Kontrollkästchens für das GovCloud (US) Konto"]
+image:screenshot-redirect-cloudformation.png["Ein Screenshot, der zeigt, wie der CloudFormation-Stack zum Hinzufügen von Richtlinien und eine Rolle für die Werkseinstellungen des Workloads erstellt wird."]
 
-*** Bei der Authentifizierung mithilfe von AWS GovCloud wird die SaaS-Plattform deaktiviert. Dies ist eine permanente Änderung Ihres Kontos und kann nicht rückgängig gemacht werden.
+.. Wenn Sie Single Sign-On (SSO) mit AWS verwenden, öffnen Sie eine separate Browser-Registerkarte und melden Sie sich bei der AWS-Konsole an, bevor Sie *Weiter* auswählen.
++
+Sie sollten sich beim AWS-Konto anmelden, wo sich das FSX für ONTAP-Dateisystem befindet.
 
-
-====
-.. *Review*: Bestätigen Sie die Angaben zu den neuen Anmeldedaten und klicken Sie auf *Hinzufügen*.
+.. Wählen Sie auf der Seite „Umleiten zur CloudFormation“ die Option *Weiter*.
+.. Wählen Sie auf der Seite „schneller Stapel erstellen“ unter „Funktionen“ *Ich bestätige, dass AWS CloudFormation IAM-Ressourcen erstellen könnte*.
+.. Wählen Sie *Stapel erstellen*.
+.. Kehren Sie zur BlueXP  Workload Factory zurück, und öffnen Sie die Seite Anmeldeinformationen über das Menüsymbol, um zu überprüfen, ob die neuen Anmeldeinformationen ausgeführt werden oder ob sie hinzugefügt wurden.
 
 
 
 
 .Ergebnis
-Sie können die Anmeldeinformationen jetzt verwenden, wenn Sie eine FSX für ONTAP-Arbeitsumgebung erstellen.
-
-
-
-== Weiterführende Links
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-accounts-aws.html["AWS Zugangsdaten und Berechtigungen"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Management der AWS Credentials für BlueXP"^]
-
+Die Anmeldeinformationen werden erstellt und können auf der Seite Anmeldedaten angezeigt werden. Sie können die Anmeldeinformationen jetzt verwenden, wenn Sie eine FSX für ONTAP-Arbeitsumgebung erstellen.
