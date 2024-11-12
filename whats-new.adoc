@@ -52,7 +52,7 @@ Siehe link:https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-
 
 === Fügen Sie eine Storage-VM hinzu
 
-Das ist jetzt möglich link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["Fügen Sie eine Storage-VM hinzu"] Zu dem Filesystem Amazon FSX für NetApp ONTAP mit BlueXP.
+Sie können jetzt mithilfe von BlueXP  eine Storage-VM zum Filesystem von Amazon FSX für NetApp ONTAP hinzufügen.
 
 
 
@@ -68,13 +68,13 @@ Die Registerkarte **Meine Möglichkeiten** ist jetzt **Mein Anwesen**. Die Dokum
 
 === Startzeit des Wartungsfenster
 
-Wenn link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["Schaffung einer Arbeitsumgebung"], Sie können die Startzeit für das wöchentliche 30-minütige Wartungsfenster angeben, um sicherzustellen, dass die Wartung nicht mit kritischen Geschäftsaktivitäten in Konflikt steht.
+Wenn link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["Schaffung einer Arbeitsumgebung"], können Sie die Startzeit für das wöchentliche 30-minütige Wartungsfenster angeben, um sicherzustellen, dass die Wartung nicht mit kritischen Geschäftsaktivitäten in Konflikt steht.
 
 
 
 === Verteilung von Volume-Daten über FlexGroups
 
-Wenn link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["Erstellen eines Volumes"], Sie können die Datenoptimierung durch Erstellen einer FlexGroup zur Verteilung von Daten über Volumes.
+Beim Erstellen eines Volumes können Sie die Datenoptimierung durch Erstellen einer FlexGroup aktivieren, die Daten über Volumes hinweg verteilt.
 
 
 
@@ -84,13 +84,13 @@ Wenn link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx
 
 === Startzeit des Wartungsfenster
 
-Wenn link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["Schaffung einer Arbeitsumgebung"], Sie können die Startzeit für das wöchentliche 30-minütige Wartungsfenster angeben, um sicherzustellen, dass die Wartung nicht mit kritischen Geschäftsaktivitäten in Konflikt steht.
+Wenn link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["Schaffung einer Arbeitsumgebung"], können Sie die Startzeit für das wöchentliche 30-minütige Wartungsfenster angeben, um sicherzustellen, dass die Wartung nicht mit kritischen Geschäftsaktivitäten in Konflikt steht.
 
 
 
 === Verteilung von Volume-Daten über FlexGroups
 
-Wenn link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["Erstellen eines Volumes"], Sie können die Datenoptimierung durch Erstellen einer FlexGroup zur Verteilung von Daten über Volumes.
+Beim Erstellen eines Volumes können Sie die Datenoptimierung durch Erstellen einer FlexGroup aktivieren, die Daten über Volumes hinweg verteilt.
 
 
 
@@ -106,7 +106,7 @@ Wenn Sie eine Arbeitsumgebung erstellen, können Sie jetzt über BlueXP  verfü
 
 === Tags hinzufügen oder ändern
 
-Sie können optional link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["Zusatz"]Volumes und link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#manage-volume-tags["Ändern"] Tags zum Kategorisieren von Volumes erstellen.
+Sie können optional Tags hinzufügen und ändern, um Volumes zu kategorisieren.
 
 
 
@@ -170,13 +170,13 @@ Sie können jetzt link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-m
 
 === Datenreplizierung und -Synchronisierung
 
-Sie können jetzt link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#replicate-and-sync-data["Datenreplizierung und -Synchronisierung"] zu On-Premises- und anderen FSX für ONTAP-Systemen mit FSX für ONTAP als Quelle zugreifen.
+Sie können jetzt Daten mithilfe von FSX for ONTAP als Quelle in On-Premises- und andere FSX for ONTAP-Systeme replizieren und synchronisieren.
 
 
 
 === Erstellen Sie ein iSCSI-Volume
 
-Sie können jetzt link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["Erstellen Sie iSCSI Volumes in FSX für ONTAP mit Cloud Manager"].
+Sie können jetzt mit Cloud Manager iSCSI-Volumes in FSX für ONTAP erstellen.
 
 
 
@@ -224,7 +224,7 @@ Sie können iSCSI Volumes für FSX für ONTAP mithilfe der Cloud Manager API ers
 
 === Wählen Sie bei der Erstellung von Volumes Volumeneinheiten aus
 
-Sie können link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["Wählen Sie beim Erstellen von Volumes Volume-Einheiten (gib oder tib) aus"]FSX für ONTAP nutzen.
+Sie können beim Erstellen von Volumes in FSX für ONTAP Volume-Einheiten (gib oder tib) auswählen.
 
 
 
@@ -234,13 +234,13 @@ Sie können link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx
 
 === Erstellen Sie CIFS Volumes mit Cloud Manager
 
-Jetzt können Sie link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#creating-volumes["Erstellen Sie CIFS Volumes in FSX für ONTAP mit Cloud Manager"].
+Jetzt können Sie CIFS Volumes in FSX für ONTAP mit Cloud Manager erstellen.
 
 
 
 === Bearbeiten von Volumes mit Cloud Manager
 
-Jetzt können Sie link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#editing-volumes["Bearbeiten Sie FSX für ONTAP Volumes mit Cloud Manager"].
+Jetzt können Sie FSX für ONTAP Volumes mit Cloud Manager bearbeiten.
 
 
 
