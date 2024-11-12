@@ -30,7 +30,7 @@ Die Workload-Schnittstelle bietet BlueXP  Benutzern Optionen, um Workload-Funkt
 
 == Über diese Aufgabe
 
-Wenn Sie neue Zugangsdaten für FSX for ONTAP aus Storage in der BlueXP  Workload Factory hinzufügen, müssen Sie entscheiden, in welcher Berechtigungsstufe bzw. welchem Betriebsmodus Sie arbeiten möchten. Um AWS-Ressourcen wie FSX for ONTAP-Dateisysteme zu erkennen und bereitzustellen, benötigen Sie _read_ oder _Automate_-Berechtigungen. BlueXP  FSX für ONTAP arbeitet im _BASIC_ Modus, es sei denn, Sie wählen den _Read_ Modus oder den _Automate_ Modus. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html.html["Weitere Informationen zu Betriebsmodi"].
+Wenn Sie neue Zugangsdaten für FSX for ONTAP aus Storage in der BlueXP  Workload Factory hinzufügen, müssen Sie entscheiden, in welcher Berechtigungsstufe bzw. welchem Betriebsmodus Sie arbeiten möchten. Um AWS-Ressourcen wie FSX for ONTAP-Dateisysteme zu erkennen und bereitzustellen, benötigen Sie _read_ oder _Automate_-Berechtigungen. BlueXP  FSX für ONTAP arbeitet im _BASIC_ Modus, es sei denn, Sie wählen den _Read_ Modus oder den _Automate_ Modus. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Weitere Informationen zu Betriebsmodi"].
 
 Neue und vorhandene AWS Zugangsdaten können über die BlueXP -Einstellungen > *Anmeldedaten*-Seite aufgerufen werden.
 
