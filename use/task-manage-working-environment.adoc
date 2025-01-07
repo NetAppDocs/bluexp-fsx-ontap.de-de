@@ -36,9 +36,9 @@ image:screenshot-system-manager.png["Ein Screenshot aus dem rechten Fensterberei
 
 == Managen Sie ein Filesystem mit Amazon CloudFormation
 
-Mithilfe von Amazon CloudFormation können Sie FSX for ONTAP-Dateisystemressourcen (Volumes, CIFS-Freigaben, Exportrichtlinien und vieles mehr) bereitstellen und managen.
+FSX for ONTAP-Dateisystemressourcen (Volumes, CIFS-Freigaben, Exportrichtlinien usw.) lassen sich mit Amazon CloudFormation bereitstellen und managen.
 
-link:https://github.com/NetApp/NetApp-CloudFormation-FSx-ONTAP-provider[""]
+link:https://github.com/NetApp/NetApp-CloudFormation-FSx-ONTAP-provider["NetApp CloudFormation FSX für ONTAP-Provider GitHub Repository"^]
 
 
 
