@@ -30,7 +30,7 @@ Die Workload-Schnittstelle bietet BlueXP  Benutzern Optionen, um Workload-Funkt
 
 == Über diese Aufgabe
 
-Wenn Sie neue Zugangsdaten für FSX for ONTAP aus Storage in der BlueXP  Workload Factory hinzufügen, müssen Sie entscheiden, in welcher Berechtigungsstufe bzw. welchem Betriebsmodus Sie arbeiten möchten. Um AWS-Ressourcen wie FSX for ONTAP-Dateisysteme zu erkennen und bereitzustellen, benötigen Sie _read_ oder _Automate_-Berechtigungen. BlueXP  FSX für ONTAP arbeitet im _BASIC_ Modus, es sei denn, Sie wählen den _Read_ Modus oder den _Automate_ Modus. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Weitere Informationen zu Betriebsmodi"].
+Wenn Sie neue Zugangsdaten für FSX for ONTAP aus Storage in der BlueXP  Workload Factory hinzufügen, müssen Sie entscheiden, in welcher Berechtigungsstufe bzw. welchem Betriebsmodus Sie arbeiten möchten. Um AWS-Ressourcen wie FSX for ONTAP-Dateisysteme zu erkennen und bereitzustellen, benötigen Sie _read_ oder _Automate_-Berechtigungen. BlueXP  FSX für ONTAP arbeitet im _BASIC_ Modus, es sei denn, Sie wählen den _Read_ Modus oder den _Automate_ Modus. _Lesen_ sind die gleichen wie Ansichtsberechtigungen. _Automate_ sind dieselben wie Operate-Berechtigungen. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Weitere Informationen zu Betriebsmodi"].
 
 Neue und vorhandene AWS Zugangsdaten können über die BlueXP -Einstellungen > *Anmeldedaten*-Seite aufgerufen werden.
 
@@ -73,9 +73,9 @@ image:screenshot-add-credentials-manually.png["Ein Screenshot mit den Elementen,
 
 
 
-=== Schritt 1: Wählen Sie die Workload-Funktionen aus und erstellen Sie die IAM-Richtlinien
+=== Schritt 1: Wählen Sie die Speicherfunktion aus und erstellen Sie die IAM-Richtlinie
 
-In diesem Abschnitt legen Sie fest, welche Arten von Workload-Funktionen im Rahmen dieser Anmeldedaten gemanagt werden können und welche Berechtigungen für jeden Workload aktiviert werden. Sie müssen die Richtlinienberechtigungen für jeden ausgewählten Workload aus der Codebox kopieren und zur Erstellung der Richtlinien in die AWS Management Console innerhalb Ihres AWS-Kontos hinzufügen.
+In diesem Abschnitt legen Sie fest, welche Storage-Funktion als Teil dieser Anmeldedaten gemanagt werden soll, sowie welche Berechtigungen für den Speicher aktiviert sind. Zudem haben Sie die Möglichkeit, andere Workloads wie Datenbanken, GenAI oder VMware auszuwählen. Sobald Sie Ihre Auswahl getroffen haben, müssen Sie die Richtlinienberechtigungen für jeden ausgewählten Workload aus der Codebox kopieren und in die AWS Management Console innerhalb Ihres AWS Kontos einfügen, um die Richtlinien zu erstellen.
 
 image:screenshot-create-policies-manual.png["Ein Screenshot, der zeigt, welche Workload-Funktionen im Rahmen der Richtlinien in diesen Anmeldedaten gemanagt werden können."]
 
@@ -86,6 +86,51 @@ Sie können später weitere Funktionen hinzufügen. Wählen Sie also einfach die
 
 . Wählen Sie für die Workload-Funktionen, die eine Auswahl an Berechtigungsstufen bieten (automatisieren oder lesen), den Berechtigungstyp aus, der mit diesen Zugangsdaten verfügbar sein wird. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Informieren Sie sich über die Berechtigungen, auch als Betriebsmodi bezeichnet"^].
 . Kopieren Sie im Codebox-Fenster die Berechtigungen für die erste IAM-Richtlinie.
++
+Die Speicherberechtigungen können auch von den folgenden Registerkarten kopiert werden.
+
++
+[role="tabbed-block"]
+====
+.Leseberechtigungen
+--
+[source, json]
+----
+        "fsx:Describe*",
+        "fsx:ListTagsForResource",
+        "ec2:Describe*",
+        "kms:Describe*",
+        "elasticfilesystem:Describe*",
+        "kms:List*",
+        "cloudwatch:GetMetricData",
+        "cloudwatch:GetMetricStatistics"
+----
+--
+.Automatisieren von Berechtigungen
+--
+[source, json]
+----
+        "fsx:*",
+        "ec2:Describe*",
+        "ec2:CreateTags",
+        "ec2:CreateSecurityGroup",
+        "iam:CreateServiceLinkedRole",
+        "kms:Describe*",
+        "elasticfilesystem:Describe*",
+        "kms:List*",
+        "kms:CreateGrant",
+        "cloudwatch:PutMetricData",
+        "cloudwatch:GetMetricData",
+        "iam:SimulatePrincipalPolicy",
+        "cloudwatch:GetMetricStatistics"
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:RevokeSecurityGroupIngress",
+        "ec2:DeleteSecurityGroup"
+----
+--
+====
 . Öffnen Sie ein anderes Browserfenster, und melden Sie sich bei Ihrem AWS-Konto in der AWS Management Console an.
 . Öffnen Sie den IAM-Dienst, und wählen Sie dann *Richtlinien* > *Richtlinie erstellen* aus.
 . Wählen Sie JSON als Dateityp aus, fügen Sie die Berechtigungen ein, die Sie in Schritt 3 kopiert haben, und wählen Sie *Weiter* aus.
