@@ -585,7 +585,6 @@
   <block id="27a901c04d21dffe48f2fc38150f7c5c" category="section-title">CloudShell verfügbar in BlueXP -Workloads</block>
   <block id="30e5906a069abe8bb88f1aed916b358b" category="paragraph">CloudShell ist verfügbar, wenn Sie sich in BlueXP -Workloads über die BlueXP -Konsole befinden. CloudShell ermöglicht Ihnen die Verwendung der in Ihrem BlueXP -Konto angegebenen AWS- und ONTAP-Anmeldeinformationen und die Ausführung von AWS CLI-Befehlen oder ONTAP CLI-Befehlen in einer Shell-ähnlichen Umgebung.</block>
   <block id="4ab00ae468588a563b956d814954695d" category="inline-link-macro">Verwenden Sie CloudShell</block>
-  <block id="71ee7ec26ff8d29a0d286a605f08aeb5" category="paragraph"><block ref="71ee7ec26ff8d29a0d286a605f08aeb5" category="inline-link-macro-rx"></block></block>
   <block id="1f7f7589b5db575980a7c6142051bb44" category="paragraph">Wenn Sie Ihre AWS-Anmeldeinformationen bereits bei BlueXP  angegeben haben, kann *My estate* automatisch FSX für ONTAP-Dateisysteme innerhalb eines Workspace erkennen und vorschlagen, die Sie mit BlueXP  hinzufügen und verwalten können. Sie können auch verfügbare Datenservices prüfen.</block>
   <block id="142acbaf383c4f4c44d1693c75c309df" category="paragraph">Sie können FSX für ONTAP-Dateisysteme entdecken, wenn Sie eine Arbeitsumgebung hinzufügen oder indem Sie die Seite *Mein Anwesen* verwenden.</block>
   <block id="0e2c79da1cf7b4ae88e08f783a1f7f85" category="paragraph">Sie können ein FSX für ONTAP-Dateisystem nur einmal innerhalb eines BlueXP -Kontos erkennen und es an einen Arbeitsbereich anhängen. Das Dateisystem kann später entfernt und einem anderen Arbeitsbereich wieder zugeordnet werden.</block>
@@ -650,4 +649,5 @@
   <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">BlueXP Webinare</block>
   <block id="2e0c4c64c2671f5575eb184e577dcdae" category="sidebar">Überwachen Sie den Betrieb mit Tracker</block>
   <block id="26efc0a2e060feb5086fc0ee17ded6e1" category="sidebar">Entfernen eines Dateisystems aus einem Arbeitsbereich</block>
+  <block id="03efd4c623255859d8f24cea1414ca80" category="paragraph"><block ref="03efd4c623255859d8f24cea1414ca80" category="inline-link-macro-rx"></block></block>
 </blocks>
