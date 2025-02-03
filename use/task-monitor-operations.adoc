@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: use/task-monitor-operations.html 
+keywords: monitor databases, monitor jobs, track database jobs 
+summary: Überwachen Sie den FSX for ONTAP-Betrieb und den Betriebsfortschritt mit Tracker in BlueXP . 
+---
+= Überwachung des FSX for ONTAP Betriebs mit Tracker in BlueXP 
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mit Tracker in BlueXP  überwachen und verfolgen Sie die Ausführung von FSX for ONTAP und überwachen den Job-Fortschritt.
+
+.Über diese Aufgabe
+BlueXP  bietet Tracker, eine Jobüberwachungsfunktion, mit der Sie den Fortschritt und Status der Anmeldeinformationen, FSX für ONTAP und Verbindungsvorgänge überwachen und verfolgen können, Details für Betriebsaufgaben und untergeordnete Aufgaben überprüfen, Probleme oder Fehler diagnostizieren, Parameter für fehlgeschlagene Vorgänge bearbeiten und fehlgeschlagene Vorgänge erneut versuchen können.
+
+In Tracker sind mehrere Aktionen verfügbar. Sie können Jobs nach Zeitrahmen (letzte 24 Stunden, 7 Tage, 14 Tage oder 30 Tage), Workload, Status und Benutzer filtern, Jobs mithilfe der Suchfunktion suchen und die Jobtabelle als CSV-Datei herunterladen. Sie können Tracker jederzeit aktualisieren. Sie können einen fehlgeschlagenen Vorgang schnell wiederholen oder Parameter für einen fehlgeschlagenen Vorgang bearbeiten und den Vorgang erneut versuchen.
+
+Tracker unterstützt zwei Überwachungsebenen. Jede Aufgabe, z. B. das Erstellen eines Dateisystems, zeigt die Aufgabenbeschreibung, den Status, die Startzeit, die Dauer der Aufgabe, den Benutzer, die Region, die Proxy-Ressource (Link-Zuordnung), die Aufgaben-ID und alle zugehörigen untergeordneten Aufgaben an.
+
+Verfolgung von Aufgabenebenen mit Beispielen::
++
+--
+* Stufe 1 (übergeordnete Aufgabe): Verfolgt die Dateisystembereitstellung.
+* Stufe 2 (Unteraufgabe): Verfolgt die Unteraufgaben im Zusammenhang mit der Dateisystembereitstellung.
+
+
+--
+Betriebsstatus:: Der Betriebsstatus in Tracker ist wie folgt: _In Bearbeitung_, _Erfolg_ und _Fehlgeschlagen_.
+Betriebsfrequenz:: Die Vorgangshäufigkeit basiert auf dem Aufgabentyp und dem Zeitplan.
+Aufbewahrung von Ereignissen:: Ereignisse werden 30 Tage lang in der Benutzeroberfläche gespeichert.
+
+
+
+
+== Verfolgen und überwachen Sie Vorgänge
+
+Überwachen und verfolgen Sie den Betrieb in BlueXP  mit Tracker.
+
+.Schritte
+. Wählen Sie in der BlueXP -Konsole das Symbol *Einstellungen* und dann *Tracker*.
+. Wählen Sie unter Speicher die Option *Gehe zu Lagerbestandsbestand* aus.
+. Wählen Sie aus dem Lagerbestand das Menü mit den Kontoeinstellungen und dann *Tracker* aus.
++
+image:screenshot-menu-tracker-option.png["Ein Screenshot des Menüs mit markierter Tracker-Option."]
+
+. In Tracker können Sie Aufgaben anzeigen oder die Filter oder Suchfunktionen verwenden, um die Ergebnisse einzugrenzen. Sie können auch einen Bericht aller Operationen herunterladen, indem Sie auf *CSV exportieren* klicken.
+
+
+
+
+== API-Anforderung anzeigen
+
+Zeigen Sie die API-Anforderung in der Codebox für eine Aufgabe in Tracker an.
+
+.Schritte
+. Wählen Sie in Tracker eine Aufgabe aus.
+. Wählen Sie das drei-Punkt-Menü aus und wählen Sie dann *API-Anforderung anzeigen*.
+
+
+
+
+== Wiederholen Sie einen fehlgeschlagenen Vorgang
+
+Wiederholen Sie einen fehlgeschlagenen Vorgang in Tracker. Wenn Sie den fehlgeschlagenen Vorgang erneut versuchen, wird eine neue Aufgabe gestartet, die Sie im Tracker überwachen können.
+
+Sie können auch die Fehlermeldung eines fehlgeschlagenen Vorgangs kopieren.
+
+
+NOTE: Sie können den fehlgeschlagenen Vorgang nur einmal wiederholen.
+
+.Schritte
+. Wählen Sie in Tracker einen fehlgeschlagenen Vorgang aus.
+. Wählen Sie das drei-Punkt-Menü und dann *Wiederholen*.
+
+
+.Ergebnis
+Der Vorgang wird neu initiiert und erscheint als neue Aufgabe in Tracker.
+
+
+
+== Bearbeiten Sie einen fehlgeschlagenen Vorgang und versuchen Sie es erneut
+
+Bearbeiten Sie die Parameter des fehlgeschlagenen Vorgangs, und versuchen Sie den Vorgang außerhalb von Tracker erneut.
+
+.Schritte
+. Wählen Sie in Tracker einen fehlgeschlagenen Vorgang aus.
+. Wählen Sie das drei-Punkt-Menü und dann *Bearbeiten und erneut versuchen*.
++
+Sie werden zur Seite „Vorgang“ weitergeleitet, z. B. zur Volume-Erstellung. Dort können Sie die Parameter bearbeiten und den Vorgang erneut versuchen.
+
+
+
+.Ergebnis
+Der Vorgang wird erneut initiiert. Rufen Sie Tracker auf, um den Status des Vorgangs anzuzeigen.
