@@ -18,6 +18,18 @@ Erfahren Sie mehr über die Neuerungen in FSX for ONTAP.
 
 
 
+== 02 März 2025
+
+
+
+=== CloudShell-Events in Tracker
+
+Immer, wenn Sie CloudShell für die Ausführung von FSX for ONTAP-Vorgängen aus BlueXP -Workloads verwenden, werden die Ereignisse in Tracker angezeigt.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["Monitoring und Nachverfolgung von FSX für den ONTAP-Betrieb in BlueXP "^]
+
+
+
 == 02 Februar 2025
 
 
