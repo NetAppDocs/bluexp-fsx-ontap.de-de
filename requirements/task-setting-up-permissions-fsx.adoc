@@ -77,7 +77,7 @@ image:screenshot-add-credentials-manually.png["Ein Screenshot mit den Elementen,
 
 In diesem Abschnitt legen Sie fest, welche Storage-Funktion als Teil dieser Anmeldedaten gemanagt werden soll, sowie welche Berechtigungen für den Speicher aktiviert sind. Zudem haben Sie die Möglichkeit, andere Workloads wie Datenbanken, GenAI oder VMware auszuwählen. Sobald Sie Ihre Auswahl getroffen haben, müssen Sie die Richtlinienberechtigungen für jeden ausgewählten Workload aus der Codebox kopieren und in die AWS Management Console innerhalb Ihres AWS Kontos einfügen, um die Richtlinien zu erstellen.
 
-image:screenshot-create-policies-manual.png["Ein Screenshot, der zeigt, welche Workload-Funktionen im Rahmen der Richtlinien in diesen Anmeldedaten gemanagt werden können."]
+image:screenshot-create-policies-manual-permissions-check.png["Ein Screenshot, der zeigt, welche Workload-Funktionen im Rahmen der Richtlinien in diesen Anmeldedaten gemanagt werden können."]
 
 .Schritte
 . Aktivieren Sie im Abschnitt *Richtlinien erstellen* die Workload-Funktionen, die Sie in diese Anmeldedaten aufnehmen möchten. Aktivieren Sie *Storage*, um Dateisysteme zu erstellen und zu verwalten.
@@ -85,6 +85,7 @@ image:screenshot-create-policies-manual.png["Ein Screenshot, der zeigt, welche W
 Sie können später weitere Funktionen hinzufügen. Wählen Sie also einfach die Workloads aus, die Sie aktuell implementieren und managen möchten.
 
 . Wählen Sie für die Workload-Funktionen, die eine Auswahl an Berechtigungsstufen bieten (automatisieren oder lesen), den Berechtigungstyp aus, der mit diesen Zugangsdaten verfügbar sein wird. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Informieren Sie sich über die Berechtigungen, auch als Betriebsmodi bezeichnet"^].
+. Optional: Wählen Sie *Enable automatic permissions Check* aus, um zu überprüfen, ob Sie die erforderlichen AWS-Kontoberechtigungen für die Ausführung von Workload-Vorgängen besitzen. Durch Aktivieren der Prüfung wird die zu Ihren Berechtigungsrichtlinien hinzugefügt `iam:SimulatePrincipalPolicy permission`. Mit dieser Berechtigung werden nur Berechtigungen bestätigt. Sie können die Berechtigung nach dem Hinzufügen von Anmeldeinformationen entfernen. Wir empfehlen jedoch, sie beizubehalten, um die Ressourcenerstellung für teilweise erfolgreiche Vorgänge zu verhindern und Sie vor der erforderlichen manuellen Ressourcenbereinigung zu schützen.
 . Kopieren Sie im Codebox-Fenster die Berechtigungen für die erste IAM-Richtlinie.
 +
 Die Speicherberechtigungen können auch von den folgenden Registerkarten kopiert werden.
@@ -129,51 +130,50 @@ Die Speicherberechtigungen können auch von den folgenden Registerkarten kopiert
 [source, json]
 ----
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "fsx:*",
-                "ec2:Describe*",
-                "ec2:CreateTags",
-                "ec2:CreateSecurityGroup",
-                "iam:CreateServiceLinkedRole",
-                "kms:Describe*",
-                "elasticfilesystem:Describe*",
-                "kms:List*",
-                "kms:CreateGrant",
-                "cloudwatch:PutMetricData",
-                "cloudwatch:GetMetricData",
-                "iam:SimulatePrincipalPolicy",
-                "cloudwatch:GetMetricStatistics"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "ec2:AuthorizeSecurityGroupEgress",
-                "ec2:AuthorizeSecurityGroupIngress",
-                "ec2:RevokeSecurityGroupEgress",
-                "ec2:RevokeSecurityGroupIngress",
-                "ec2:DeleteSecurityGroup"
-            ],
-            "Resource": "*",
-            "Condition": {
-                "StringLike": {
-                    "ec2:ResourceTag/AppCreator": "NetappFSxWF"
-                }
-            }
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "iam:SimulatePrincipalPolicy"
-            ],
-            "Resource": "*"
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "fsx:*",
+        "ec2:Describe*",
+        "ec2:CreateTags",
+        "ec2:CreateSecurityGroup",
+        "iam:CreateServiceLinkedRole",
+        "kms:Describe*",
+        "elasticfilesystem:Describe*",
+        "kms:List*",
+        "kms:CreateGrant",
+        "cloudwatch:PutMetricData",
+        "cloudwatch:GetMetricData",
+        "cloudwatch:GetMetricStatistics"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:AuthorizeSecurityGroupEgress",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:RevokeSecurityGroupEgress",
+        "ec2:RevokeSecurityGroupIngress",
+        "ec2:DeleteSecurityGroup"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringLike": {
+          "ec2:ResourceTag/AppCreator": "NetappFSxWF"
         }
-    ]
+      }
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:SimulatePrincipalPolicy"
+      ],
+      "Resource": "*"
+    }
+  ]
 }
 ----
 --
@@ -278,6 +278,7 @@ image:screenshot-add-credentials-cloudformation.png["Ein Screenshot mit den Elem
 +
 Sie können später weitere Funktionen hinzufügen. Wählen Sie also einfach die Workloads aus, die Sie aktuell implementieren und managen möchten.
 
+. Optional: Wählen Sie *Enable automatic permissions Check* aus, um zu überprüfen, ob Sie die erforderlichen AWS-Kontoberechtigungen für die Ausführung von Workload-Vorgängen besitzen. Durch Aktivieren der Prüfung wird die Berechtigung zu Ihren Berechtigungsrichtlinien hinzugefügt `iam:SimulatePrincipalPolicy`. Mit dieser Berechtigung werden nur Berechtigungen bestätigt. Sie können die Berechtigung nach dem Hinzufügen von Anmeldeinformationen entfernen. Wir empfehlen jedoch, sie beizubehalten, um die Ressourcenerstellung für teilweise erfolgreiche Vorgänge zu verhindern und Sie vor der erforderlichen manuellen Ressourcenbereinigung zu schützen.
 . Geben Sie unter *Name der Anmeldeinformationen* den Namen ein, den Sie für diese Anmeldeinformationen verwenden möchten.
 . Fügen Sie die Zugangsdaten von AWS CloudFormation hinzu:
 +
