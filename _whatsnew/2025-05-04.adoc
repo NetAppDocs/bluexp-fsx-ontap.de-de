@@ -1,0 +1,39 @@
+= Unterstützung von Tracker-Antworten
+:allow-uri-read: 
+
+
+
+
+=== Unterstützung von Tracker-Antworten
+
+Tracker bietet jetzt API-Antworten, sodass Sie die REST API-Ausgabe zu der Aufgabe sehen können.
+
+
+
+=== Unterstützung der Link-Authentifizierung für AWS Secrets Manager
+
+Sie haben jetzt die Möglichkeit, Secrets von AWS Secrets Manager zum Authentifizieren von Links zu verwenden, sodass Sie keine in BlueXP -Workloads gespeicherten Anmeldeinformationen verwenden müssen.
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Stellen Sie über einen Lambda-Link eine Verbindung zu einem FSX für ONTAP-Dateisystem her"]
+
+
+
+=== Implementierung von Best Practices für ein FSX für ONTAP-Filesystem
+
+BlueXP  Workloads bietet ein Dashboard, über das Sie den Architektur-Status Ihrer Filesystem-Konfigurationen überprüfen können. Mithilfe dieser Analyse können Sie Best Practices für Ihre FSX for ONTAP-Dateisysteme implementieren. Die Dateisystemkonfigurationsanalyse umfasst die folgenden Konfigurationen: SSD-Kapazitätsgrenze, geplante lokale Snapshots, geplante FSX für ONTAP-Backups, Daten-Tiering und Remote-Datenreplizierung.
+
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/configuration-analysis.html["Informieren Sie sich über die gut konzipierte Analyse für Filesystem-Konfigurationen"]
+* link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_well-architected/improve-configurations.html["Implementieren Sie Best Practices für Ihre Dateisysteme"]
+
+
+
+
+=== Gut gestaltete Benachrichtigung bei Problemen mit dem Dateisystem
+
+In der BlueXP -Konsole zeigen FSX für ONTAP-Dateisysteme mit gut konzipierten Problemen jetzt eine Benachrichtigung im Bildschirm an, die anzeigt, wann Dateisysteme Probleme zu beheben haben.
+
+
+
+=== Terminologie für Berechtigungen wurde aktualisiert
+
+Die Benutzeroberfläche und Dokumentation der Workload Factory verwenden jetzt „Read-Only“, um auf Leseberechtigungen und „Read-Write“ zu verweisen, um Berechtigungen zu automatisieren.
