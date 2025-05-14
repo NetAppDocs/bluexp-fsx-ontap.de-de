@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: use/task-monitor-operations.html 
-keywords: monitor databases, monitor jobs, track database jobs 
+keywords: monitor jobs, track jobs, monitor, track 
 summary: Überwachen Sie den FSX for ONTAP-Betrieb und den Betriebsfortschritt mit Tracker in BlueXP . 
 ---
 = Überwachung des FSX for ONTAP Betriebs mit Tracker in BlueXP 
@@ -14,11 +14,11 @@ summary: Überwachen Sie den FSX for ONTAP-Betrieb und den Betriebsfortschritt m
 Mit Tracker in BlueXP  überwachen und verfolgen Sie die Ausführung von FSX for ONTAP und überwachen den Job-Fortschritt.
 
 .Über diese Aufgabe
-BlueXP  bietet Tracker, eine Jobüberwachungsfunktion, mit der Sie den Fortschritt und Status der Anmeldeinformationen, FSX für ONTAP und Verbindungsvorgänge überwachen und verfolgen können, Details für Betriebsaufgaben und untergeordnete Aufgaben überprüfen, Probleme oder Fehler diagnostizieren, Parameter für fehlgeschlagene Vorgänge bearbeiten und fehlgeschlagene Vorgänge erneut versuchen können.
+BlueXP  bietet Tracker, eine Jobüberwachungsfunktion, mit der Sie den Fortschritt und Status der Anmeldeinformationen, FSX für ONTAP und Link-Vorgänge überwachen und verfolgen können, Details für Betriebsaufgaben und untergeordnete Aufgaben überprüfen und Probleme oder Fehler diagnostizieren können.
 
 In Tracker sind mehrere Aktionen verfügbar. Sie können Jobs nach Zeitrahmen (letzte 24 Stunden, 7 Tage, 14 Tage oder 30 Tage), Workload, Status und Benutzer filtern, Jobs mithilfe der Suchfunktion suchen und die Jobtabelle als CSV-Datei herunterladen. Sie können Tracker jederzeit aktualisieren. Sie können einen fehlgeschlagenen Vorgang schnell wiederholen oder Parameter für einen fehlgeschlagenen Vorgang bearbeiten und den Vorgang erneut versuchen.
 
-Tracker unterstützt zwei Überwachungsebenen. Jede Aufgabe, z. B. das Erstellen eines Dateisystems, zeigt die Aufgabenbeschreibung, den Status, die Startzeit, die Dauer der Aufgabe, den Benutzer, die Region, die Proxy-Ressource (Link-Zuordnung), die Aufgaben-ID und alle zugehörigen untergeordneten Aufgaben an.
+Tracker unterstützt je nach Betrieb zwei Überwachungsebenen. Jede Aufgabe, wie z. B. die Dateisystembereitstellung, zeigt die Aufgabenbeschreibung, den Status, die Startzeit, die Aufgabendauer, den Benutzer, die Region, die Proxyressource, die Aufgaben-ID und alle zugehörigen untergeordneten Aufgaben an. Sie können API-Antworten anzeigen, um zu verstehen, was während des Vorgangs passiert ist.
 
 Verfolgung von Aufgabenebenen mit Beispielen::
 +
