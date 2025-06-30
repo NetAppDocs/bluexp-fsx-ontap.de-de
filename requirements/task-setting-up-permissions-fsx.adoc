@@ -30,7 +30,7 @@ Die Workload-Schnittstelle bietet BlueXP  Benutzern Optionen, um Workload-Funkt
 
 == Über diese Aufgabe
 
-Wenn Sie neue Zugangsdaten für FSX for ONTAP aus dem Speicher in der BlueXP  Workload Factory hinzufügen, müssen Sie entscheiden, in welcher Berechtigungsstufe bzw. in welchem _Betriebsmodus_ Sie arbeiten möchten. Um AWS-Ressourcen wie FSX for ONTAP-Dateisysteme zu finden und bereitzustellen, benötigen Sie _Read-Only_- oder _Read/Write_-Berechtigungen. BlueXP  FSX für ONTAP arbeitet im _BASIC_ Modus, es sei denn, Sie wählen den _Read-Only_ Modus oder den _Read/Write_ Modus. _Read-Only_ sind identisch mit View-Berechtigungen. _Lesen/Schreiben_ sind dieselben wie Operate-Berechtigungen. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Weitere Informationen zu Betriebsmodi"].
+Wenn Sie neue Anmeldeinformationen für FSx for ONTAP aus dem Speicher in der BlueXP Workload Factory hinzufügen, müssen Sie entscheiden, welche Berechtigungsstufe bzw. welchen Betriebsmodus Sie verwenden möchten. Um AWS-Ressourcen wie FSx for ONTAP-Dateisysteme zu erkennen und bereitzustellen, benötigen Sie Lese- oder Lese-/Schreibberechtigungen. BlueXP FSx for ONTAP arbeitet im Basismodus, sofern Sie nicht den Lese- oder Lese-/Schreibmodus auswählen. _Read-Only_ sind identisch mit View-Berechtigungen. _Lesen/Schreiben_ sind dieselben wie Operate-Berechtigungen. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Weitere Informationen zu Betriebsmodi"].
 
 Neue und vorhandene AWS Zugangsdaten können über die BlueXP -Einstellungen > *Anmeldedaten*-Seite aufgerufen werden.
 
@@ -84,7 +84,7 @@ image:screenshot-create-policies-manual-permissions-check.png["Ein Screenshot, d
 +
 Sie können später weitere Funktionen hinzufügen. Wählen Sie also einfach die Workloads aus, die Sie aktuell implementieren und managen möchten.
 
-. Wählen Sie für die Workload-Funktionen, die eine Auswahl an Berechtigungsstufen bieten (Lese-/Schreibzugriff oder Schreibgeschützt), den Berechtigungstyp aus, der mit diesen Anmeldedaten verfügbar sein wird. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Informieren Sie sich über die Berechtigungen, auch als Betriebsmodi bezeichnet"^].
+. Wählen Sie für die Workload-Funktionen, die eine Auswahl an Berechtigungsstufen bieten (Nur Lesen oder Lesen/Schreiben), den Berechtigungstyp aus, der mit diesen Anmeldeinformationen verfügbar sein soll. link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["Informieren Sie sich über die Berechtigungen, auch als Betriebsmodi bezeichnet"^].
 . Optional: Wählen Sie *Enable automatic permissions Check* aus, um zu überprüfen, ob Sie die erforderlichen AWS-Kontoberechtigungen für die Ausführung von Workload-Vorgängen besitzen. Durch Aktivieren der Prüfung wird die zu Ihren Berechtigungsrichtlinien hinzugefügt `iam:SimulatePrincipalPolicy permission`. Mit dieser Berechtigung werden nur Berechtigungen bestätigt. Sie können die Berechtigung nach dem Hinzufügen von Anmeldeinformationen entfernen. Wir empfehlen jedoch, sie beizubehalten, um die Ressourcenerstellung für teilweise erfolgreiche Vorgänge zu verhindern und Sie vor der erforderlichen manuellen Ressourcenbereinigung zu schützen.
 . Kopieren Sie im Codebox-Fenster die Berechtigungen für die erste IAM-Richtlinie.
 +
@@ -221,7 +221,7 @@ Im letzten Schritt geben Sie einen Namen für die Zugangsdaten in die BlueXP  W
 
 
 .Ergebnis
-Die Anmeldeinformationen werden erstellt und können auf der Seite Anmeldedaten angezeigt werden. Sie können die Anmeldeinformationen jetzt verwenden, wenn Sie eine FSX für ONTAP-Arbeitsumgebung erstellen.
+Die Anmeldeinformationen werden erstellt und können auf der Seite Anmeldedaten angezeigt werden. Sie können die Anmeldeinformationen jetzt verwenden, wenn Sie eine FSX für ONTAP-Arbeitsumgebung erstellen. Sie können Anmeldeinformationen bei Bedarf umbenennen oder aus der BlueXP-Konsole entfernen.
 
 
 
@@ -299,4 +299,4 @@ Sie sollten sich beim AWS-Konto anmelden, wo sich das FSX für ONTAP-Dateisystem
 
 
 .Ergebnis
-Die Anmeldeinformationen werden erstellt und können auf der Seite Anmeldedaten angezeigt werden. Sie können die Anmeldeinformationen jetzt verwenden, wenn Sie eine FSX für ONTAP-Arbeitsumgebung erstellen.
+Die Anmeldeinformationen werden erstellt und können auf der Seite Anmeldedaten angezeigt werden. Sie können die Anmeldeinformationen jetzt verwenden, wenn Sie eine FSX für ONTAP-Arbeitsumgebung erstellen. Sie können Anmeldeinformationen bei Bedarf umbenennen oder aus der BlueXP-Konsole entfernen.

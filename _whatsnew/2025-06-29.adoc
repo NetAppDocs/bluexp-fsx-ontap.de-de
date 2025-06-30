@@ -1,0 +1,19 @@
+= Aktualisierung der Anmeldeinformationen
+:allow-uri-read: 
+
+
+
+
+=== Aktualisierung der Anmeldeinformationen
+
+Nachdem Sie Anmeldeinformationen und Berechtigungen für Ihr FSx for ONTAP-Dateisystem eingerichtet haben, werden Sie zur Seite „BlueXP-Anmeldeinformationen“ weitergeleitet. Auf dieser Seite können Sie Ihre FSx for ONTAP-Anmeldeinformationen umbenennen oder entfernen.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Einrichten von Berechtigungen für FSx for ONTAP-Dateisysteme"]
+
+
+
+=== Unterstützung für die Replikation von Daten zwischen zwei FSx for ONTAP-Dateisystemen
+
+Die Datenreplikation zwischen zwei FSx für ONTAP-Dateisystemen ist jetzt über die BlueXP-Konsole verfügbar.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["Datenreplizierung"]
